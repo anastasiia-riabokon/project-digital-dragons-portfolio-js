@@ -34,9 +34,18 @@ h4 {
   font-weight: 600;
 }
 
+h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
 p {
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 
 /* accent for text */
