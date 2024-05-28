@@ -1,0 +1,24 @@
+.white-block {
+  background-color: var(--white);
+}
+
+.list-hashtag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.item-hashtag {
+  border-radius: 60px;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+
+  padding: 18px;
+}
+
+.text-hashtag {
+  color: var(--black);
+}
+
+.dark-block {
+  background-color: var(--dark-grey);
+}
