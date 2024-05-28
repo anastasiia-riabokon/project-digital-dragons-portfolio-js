@@ -1,11 +1,26 @@
+.project-container {
+  display: flex;
+
+  max-width: 1376px;
+}
+
+.title-projects {
+  margin-bottom: 32px;
+}
+
 .white-block {
+  padding: 64px;
+  max-width: 688px;
   background-color: var(--white);
+  border-radius: 24px 0 0 24px;
 }
 
 .list-hashtag {
   display: flex;
   align-items: center;
   gap: 6px;
+
+  margin-bottom: 223px;
 }
 
 .item-hashtag {
@@ -19,6 +34,39 @@
   color: var(--black);
 }
 
+.subtitle-projects {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 44px;
+  margin-bottom: 32px;
+}
+
+.link-project {
+  background-color: var(--coral);
+  border-radius: 60px;
+  padding: 18px 50px;
+  display: inline-block;
+}
+
+.link-project:focus {
+  background-color: var(--coral);
+}
+
+@media screen and (hover: hover) {
+  .link-project:hover {
+    background-color: var(--coral);
+  }
+}
+
+@media screen and not (hover: hover) {
+  .link-project:active {
+    background-color: var(--coral);
+  }
+}
+
 .dark-block {
   background-color: var(--dark-grey);
+  max-width: 688px;
+  padding: 120px 37px;
+  border-radius: 0px 24px 24px 0px;
 }
