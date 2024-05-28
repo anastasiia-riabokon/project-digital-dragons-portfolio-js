@@ -1,14 +1,24 @@
 :root {
   --black: #1c1d20;
-  --darkGrey: #242527;
+  --dark-grey: #242527;
   --grey: #3b3b3b;
   --coral: #ed3b44; /*main theme*/
-  --darkCoral: #e0373f;
+  --hover-coral: #e0373f; /*hover for main theme*/
   --white: #fafafa;
   --green: #3cbc81;
-  --lightGreenTheme: #c6e327; /*for light green theme*/
-  --blueTheme: #0041e8; /*for blue theme*/
-  --lightBrownTheme: #e6533c; /*for light brown theme*/
-  --greyTheme: #2b4441; /*for grey theme*/
-  --orangeTheme: #ff7f08; /*for orange theme*/
+
+  --light-green-theme: #c6e327; /*for light green theme*/
+  --hover-light-green-theme: #aac221; /* hover for light green theme*/
+
+  --blue-theme: #0041e8; /*for blue theme*/
+  --hover-blue-theme: #033ac6; /*hover for blue theme*/
+
+  --tomato-theme: #e6533c; /*for tomato theme*/
+  --hover-tomato-theme: #cf4834; /*hover for tomato theme*/
+
+  --dark-green-theme: #2b4441; /*for dark-green theme*/
+  --hover-dark-green-theme: #213331; /*hover for dark-green theme*/
+
+  --orange-theme: #ff7f08; /*for orange theme*/
+  --hover-orange-theme: #e47208; /*hover for orange theme*/
 }
