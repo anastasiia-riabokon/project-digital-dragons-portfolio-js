@@ -2,6 +2,17 @@ body {
   background-color: var(--black);
   color: var(--white);
   font-family: 'Inter Tight', sans-serif;
+  line-height: 1.5;
+}
+
+h4 {
+  color: rgba(250, 250, 250, 0.4);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 500;
 }
 
 .section {
