@@ -1,0 +1,54 @@
+.about-me p {
+  color: var(--white);
+}
+
+.about-me-caption {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1439px) {
+  .about-me-caption {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me-caption {
+    flex-direction: column;
+  }
+}
+
+.about-me-caption div {
+  width: 680px;
+  height: 700px;
+  border-radius: 24px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.about-me-text {
+  font-size: 36px;
+  line-height: normal;
+  padding: 64px;
+  text-transform: uppercase;
+}
+
+.grey-accent-text {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-me-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-me-list li {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me-list li > * {
+  width: 50%;
+}
