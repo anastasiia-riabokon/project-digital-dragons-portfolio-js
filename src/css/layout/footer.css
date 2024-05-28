@@ -1,0 +1,110 @@
+/* #region Footer*/
+
+#lets-work-together {
+  padding: 196px 80px;
+  padding-bottom: 169px;
+
+  /* background-image: url('../img/footer/glass-effect.png');
+  background-position: 1200px center;
+  background-repeat: no-repeat; */
+}
+
+/* #region Text */
+
+.footer-text {
+  width: 542px;
+  height: 146px;
+  flex-shrink: 0;
+}
+
+.footer-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-text-img {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.footer-text-title {
+  color: #fafafa;
+
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -1.92px;
+
+  margin-top: 8px;
+}
+
+/* #endregion Text */
+
+/* #region Form*/
+
+.footer-form {
+  margin-top: 18px;
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-form-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-form-input {
+  width: 390px;
+  color: rgba(250, 250, 250, 0.6);
+  font-family: 'Inter Tight';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  outline: none;
+  padding-bottom: 20px;
+}
+
+.footer-btn {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--coral);
+
+  color: #fafafa;
+  font-weight: 500;
+  line-height: var(--white);
+  letter-spacing: -0.32px;
+
+  margin-left: 54px;
+}
+/* #endregion Form*/
+
+/* #region Contacts*/
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contacts-link {
+  padding: 18px 32px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+/* #endregion Contacts*/
+
+/* #endregion Footer*/
