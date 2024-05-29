@@ -1,20 +1,18 @@
-.hero {
+.hero.section {
   height: 900px;
   background-image: url('../../img/hero/Hero_red.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  padding-top: 0;
 }
 @media (min-resolution: 192dpi) {
-  .box {
+  .hero {
     background-image: url('../../img/hero/Hero@2x_red.png');
   }
 }
 .hero-title {
   width: 1084px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 243px;
 }
 .hero-links {
   display: flex;
