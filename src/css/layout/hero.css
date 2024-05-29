@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding-top: 300px;
+  background-size: cover;
 }
 @media (min-resolution: 192dpi) {
   .hero.section {
@@ -16,6 +17,7 @@
     background-image: url('../../img/hero/red-tablet_result.png');
     height: 1024px;
     background-position: left;
+    background-size: contain;
   }
 }
 
@@ -31,6 +33,7 @@
     height: 812px;
     padding-top: 281px;
     background-position: left;
+    background-size: contain;
   }
 }
 
