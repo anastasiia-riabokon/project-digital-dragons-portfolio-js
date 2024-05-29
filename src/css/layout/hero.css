@@ -2,7 +2,7 @@
   height: 900px;
   background-image: url('../../img/hero/Hero_red.png');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   padding-top: 300px;
   background-size: cover;
 }
@@ -14,8 +14,8 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .hero.section {
-    background-image: url('../../img/hero/red-tablet_result.png');
     height: 1024px;
+    background-image: url('../../img/hero/red-tablet_result.png');
     background-position: left;
     background-size: contain;
   }
@@ -29,9 +29,9 @@
 
 @media only screen and (max-width: 767px) {
   .hero.section {
-    background-image: url('../../img/hero/red-mobile_result.png');
     height: 812px;
     padding-top: 281px;
+    background-image: url('../../img/hero/red-mobile_result.png');
     background-position: left;
     background-size: contain;
   }
