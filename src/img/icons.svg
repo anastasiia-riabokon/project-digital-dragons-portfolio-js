@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
     <symbol id="arrow-down" viewBox="0 0 32 32">
-      <path stroke-width=".762" d="M16 .381C24.626.381 31.619 7.374 31.619 16S24.626 31.619 16 31.619.381 24.626.381 16 7.374.381 16 .381z"/>
-      <path stroke-width="1.524" d="M19.81 14.095 16 17.905l-3.81-3.81"/>
+      <path stroke-width="3.2" d="m24 12-8 8-8-8"/>
+    </symbol>
+    <symbol id="arrow-up" viewBox="0 0 32 32">
+      <path stroke-width="3.2" d="m24 20-8-8-8 8"/>
     </symbol>
     <symbol id="arrow-left" viewBox="0 0 32 32">
       <path stroke-width=".471" d="M16 31.765C7.293 31.765.235 24.707.235 16S7.293.235 16 .235 31.765 7.293 31.765 16 24.707 31.765 16 31.765z"/>
@@ -11,10 +13,6 @@
     <symbol id="arrow-right" viewBox="0 0 32 32">
       <path stroke-width=".471" d="M16 .235C24.707.235 31.765 7.293 31.765 16S24.707 31.765 16 31.765.235 24.707.235 16 7.293.235 16 .235z"/>
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".941" d="M10.98 16h10.039m-3.764-3.765L21.02 16l-3.765 3.765"/>
-    </symbol>
-    <symbol id="arrow-up" viewBox="0 0 32 32">
-      <path stroke-width=".762" d="M16 31.619c8.626 0 15.619-6.993 15.619-15.619S24.626.381 16 .381.381 7.374.381 16 7.374 31.619 16 31.619z"/>
-      <path stroke-width="1.524" d="M19.81 17.905 16 14.095l-3.81 3.81"/>
     </symbol>
     <symbol id="expertice" viewBox="0 0 32 32">
       <path fill="#ed3b44" d="M6.667 0h18.667a6.667 6.667 0 0 1 6.667 6.667v18.667a6.667 6.667 0 0 1-6.667 6.667H6.667A6.667 6.667 0 0 1 0 25.334V6.667A6.667 6.667 0 0 1 6.667 0z" style="fill:var(--color1, #ed3b44)"/>

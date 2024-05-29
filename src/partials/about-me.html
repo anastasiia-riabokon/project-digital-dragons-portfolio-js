@@ -1,4 +1,4 @@
-<section class="section about-me">
+<section id="about-me" class="section about-me">
   <div class="container">
     <div class="about-me-caption">
       <h2 class="visually-hidden">About Me</h2>
@@ -10,10 +10,9 @@
           client's unique personality.
         </p>
       </div>
-      <div class="foto-box">
-        <picture>
+      <div class="photo-box">
+        <picture class="profile-photo">
           <source
-            media="(min-width: 768px)"
             srcset="./img/about/about.jpg 1x, ./img/about/about@2x.jpg 2x"
           />
           <source
@@ -31,9 +30,16 @@
       </div>
     </div>
     <ul class="accordion-container about-me-list">
-      <li class="ac">
-        <h4 class="ac-header ac-trigger grey-accent-text">About me</h4>
-        <div class="ac-panel">
+      <li class="ac about-me-item">
+        <div class="ac-header ac-trigger about-list-header-box">
+          <h4 class="about-list-header grey-accent-text">About me</h4>
+          <button class="arrow-button">
+            <svg class="arrow-icon js-down" width="20" height="20">
+              <use href="./img/icons.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel about-list-text-box">
           <p class="ac-text">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
@@ -55,17 +61,31 @@
           </p>
         </div>
       </li>
-      <li class="ac">
-        <h4 class="ac-header ac-trigger grey-accent-text">Role</h4>
-        <div class="ac-panel">
+      <li class="ac about-me-item">
+        <div class="ac-header ac-trigger about-list-header-box">
+          <h4 class="grey-accent-text">Role</h4>
+          <button class="arrow-button">
+            <svg class="arrow-icon js-down" width="20" height="20">
+              <use href="./img/icons.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel about-list-text-box">
           <p class="ac-text">
             Frontend development<br />HeadlessCMS,Wordpress <br />Blender(enjoy)
           </p>
         </div>
       </li>
-      <li class="ac">
-        <h4 class="ac-header ac-trigger grey-accent-text">Education</h4>
-        <div class="ac-panel">
+      <li class="ac about-me-item">
+        <div class="ac-header ac-trigger about-list-header-box">
+          <h4 class="grey-accent-text">Education</h4>
+          <button class="arrow-button">
+            <svg class="arrow-icon js-down" width="20" height="20">
+              <use href="./img/icons.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel about-list-text-box">
           <p class="ac-text">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
             <br />
