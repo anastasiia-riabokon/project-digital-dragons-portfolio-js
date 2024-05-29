@@ -28,13 +28,46 @@
       >
     </div>
     <div class="dark-block">
-      <img
-        src="../img/projects/desktop/book-desk@1x.png"
-        alt="project"
-        width="614"
-        height="385"
-        loading="lazy"
-      />
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ../img/projects/desktop/book-desk@1x.png 1x,
+            ../img/projects/desktop/book-desk@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/projects/tablet/book-tab@1x.png 1x,
+            ../img/projects/tablet/book-tab@2x.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../img/projects/mobile/book-mob@1x.png 1x,
+            ../img/projects/mobile/book-mob@2x.png 2x
+          "
+        />
+
+        <img
+          src="../img/projects/desktop/book-desk@1x.png"
+          alt="project"
+          width="614"
+          height="385"
+          loading="lazy"
+        />
+      </picture>
     </div>
+  </div>
+  <div class="container-arrow">
+    <svg class="icon-arrow-project-left" width="68" height="68">
+      <use href="../img/icons.svg#arrow-left"></use>
+    </svg>
+
+    <svg class="icon-arrow-project-right" width="68" height="68">
+      <use href="../img/icons.svg#arrow-right"></use>
+    </svg>
   </div>
 </div>
