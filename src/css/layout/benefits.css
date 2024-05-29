@@ -1,0 +1,110 @@
+.wrapper-benefits {
+  display: flex;
+}
+.box-left {
+  margin-right: 412px;
+}
+.benefits-title {
+  width: 284px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+.box-right {
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin-bottom: 64px;
+}
+
+.benefits-list-item {
+  display: flex;
+
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  background: var(--dark-grey);
+  width: calc((100% - 16px) / 2);
+}
+
+.benefits-item-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 64px;
+}
+
+.benefits-item-title {
+  margin-bottom: 8px;
+}
+
+.benefits-item-text {
+}
+
+.benefits-btn {
+  padding: 18px 36px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  color: var(--white);
+  background-color: var(--black);
+
+  transition: border-color 250ms ease-in-out;
+}
+.benefits-btn:hover,
+.benefits-btn:focus {
+  border-color: var(--white);
+  background-color: var(--dark-grey);
+}
+
+/*ТЗ "Верстка адаптивна, окрім мобільних пристроїв. Точки перелому:
+   - mobile: верстка гумова від 320px, стає адаптивною з 375px;
+   - tablet: з 768px;
+   - desktop: з 1440px " */
+
+@media (max-width: 1439px) {
+  .wrapper-benefits {
+    flex-direction: column;
+  }
+  .box-left {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits-list-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 374px) {
+  .benefits-list-item {
+    width: 100%;
+  }
+  .benefits-title {
+    width: auto;
+  }
+}
+
+@media screen and (hover: hover) {
+  .benefits-btn:hover {
+    border-color: var(--white);
+    background-color: var(--dark-grey);
+  }
+}
+
+.benefits-btn:focus {
+  border-color: var(--white);
+  background-color: var(--dark-grey);
+}
+
+@media screen and not (hover: hover) {
+  .benefits-btn:active {
+    border-color: var(--white);
+    background-color: var(--dark-grey);
+  }
+}
