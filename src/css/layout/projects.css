@@ -141,13 +141,13 @@
   gap: 20px;
 }
 
-.container-arrow svg {
+.icon-project {
   fill: none;
 }
 
-.icon-arrow-project-left {
+.icon-project-arrow-left {
   stroke: rgba(250, 250, 250, 0.2);
 }
-.icon-arrow-project-right {
+.icon-project-arrow-right {
   stroke: rgba(250, 250, 250, 0.5);
 }
