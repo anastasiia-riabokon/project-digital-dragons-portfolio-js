@@ -9,7 +9,7 @@ export async function fetchReviews() {
   return response.data;
 }
 
-export async function sendRequest(email, comment) {
+export async function postRequest(email, comment) {
   const BASE_URL = 'https://portfolio-js.b.goit.study';
   const END_POINT = '/api';
   const url = `${BASE_URL}${END_POINT}/requests`;

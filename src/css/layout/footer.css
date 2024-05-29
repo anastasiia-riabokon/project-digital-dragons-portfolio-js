@@ -146,6 +146,8 @@
 
 .footer-btn:focus {
   border: 1px solid var(--white);
+  background-color: var(--hover-coral);
+  box-shadow: 0 0 20px var(--hover-coral);
 }
 /* #endregion Form*/
 
@@ -173,3 +175,43 @@
 /* #endregion Contacts*/
 
 /* #endregion Footer*/
+
+/* #region Modal*/
+
+.modal {
+  position: relative;
+  padding: 64px;
+  border-radius: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  background-color: var(--black);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  cursor: pointer;
+}
+
+.modal h5 {
+  width: 364px;
+  color: var(--white);
+  line-height: 30px;
+  letter-spacing: -0.4px;
+}
+
+.modal p {
+  width: 364px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+
+/* #endregion Modal*/
