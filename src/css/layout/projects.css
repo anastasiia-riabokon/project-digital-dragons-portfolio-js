@@ -105,18 +105,18 @@
 }
 
 .link-project:focus {
-  background-color: var(--coral);
+  background-color: var(--hover-coral);
 }
 
 @media screen and (hover: hover) {
   .link-project:hover {
-    background-color: var(--coral);
+    background-color: var(--hover-coral);
   }
 }
 
 @media screen and not (hover: hover) {
   .link-project:active {
-    background-color: var(--coral);
+    background-color: var(--hover-coral);
   }
 }
 
