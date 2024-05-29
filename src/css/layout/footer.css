@@ -1,9 +1,9 @@
 /* #region Footer*/
 
-#lets-work-together {
+#lets-work-together .container {
   background-image: url('../img/footer/glass-effect.png');
-  background-position: 1200px center;
   background-repeat: no-repeat;
+  background-position: calc(100% - 160px) center;
 }
 
 /* #region Text */
@@ -53,6 +53,33 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+
+  position: relative;
+}
+
+.form-span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+
+.form-success-text {
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  color: var(--green);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.form-error-text {
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  color: #e74a3b;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .footer-form-input {
@@ -70,13 +97,27 @@
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   outline: none;
   padding-bottom: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.footer-form-input#comment {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer-form-input:hover,
 .footer-form-input:focus {
   color: var(--white);
   border-bottom: 1px solid rgba(250, 250, 250, 0.5);
-  transition: 0.5s ease-in-out;
+}
+
+.footer-form-email:not(:placeholder-shown):invalid {
+  border-bottom: 1px solid #e74a3b;
+}
+
+.footer-form-email:valid {
+  border-bottom: 1px solid var(--green);
 }
 
 .footer-btn {
@@ -93,17 +134,18 @@
   letter-spacing: -0.32px;
 
   margin-left: 54px;
+  transition: 0.5s ease-in-out;
 }
 
 .footer-btn:hover,
 .footer-btn:active {
   background-color: var(--hover-coral);
-  transition: background-color 0.5s ease-in-out;
+  box-shadow: 0 0 20px var(--hover-coral);
+  transform: scale(1.1);
 }
 
 .footer-btn:focus {
   border: 1px solid var(--white);
-  transition: border 0.5s ease-in-out;
 }
 /* #endregion Form*/
 
@@ -120,12 +162,12 @@
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   outline: none;
+  transition: 0.5s ease-in-out;
 }
 .footer-contacts-link:hover,
 .footer-contacts-link:active,
 .footer-contacts-link:focus {
   border: 1px solid var(--white);
-  transition: border 0.5s ease-in-out;
 }
 
 /* #endregion Contacts*/
