@@ -62,24 +62,13 @@ const containerOptions = {
     currentElement
       .querySelector('.js-down')
       .setAttribute('transform', 'rotate(180)');
-    scrollItems();
   },
   beforeClose: function (currentElement) {
     currentElement
       .querySelector('.js-down')
-      .setAttribute('transform', 'rotate(0))');
+      .setAttribute('transform', 'rotate(0)');
   },
 };
-
-function scrollItems() {
-  const aboutItem = aboutSectionParentEl.querySelector('li.is-active');
-  const rect = aboutItem.getBoundingClientRect();
-  window.scrollBy({
-    top: rect.height,
-    left: 0,
-    behavior: 'smooth',
-  });
-}
 
 // ================================== RENDER ==================================
 

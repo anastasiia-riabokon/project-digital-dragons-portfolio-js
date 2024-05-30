@@ -121,6 +121,15 @@ li.ac.about-me-item p.ac-text {
   padding: 8px 68px 32px 8px;
 }
 
+@media screen and (max-width: 1439px) {
+  li.ac.about-me-item p.ac-text {
+    width: 100%;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    padding: 8px 68px 32px 8px;
+  }
+}
+
 .about-list-header-box {
   position: relative;
   height: fit-content;
