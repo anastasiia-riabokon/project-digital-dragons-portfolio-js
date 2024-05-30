@@ -105,25 +105,8 @@
   background-color: inherit;
   border: none;
   margin: 0;
-}
-
-.about-me-list li.ac.about-me-item::after {
-  content: url('../img/icons.svg#horiz-line');
-  /* content: 'HOLA'; */
-  width: 1376px;
-  stroke: white;
-}
-
-@media screen and (max-width: 1439px) {
-  .about-me-list li.ac.about-me-item::after {
-    width: 704px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .about-me-list li.ac.about-me-item::after {
-    width: 343px;
-  }
+  border-bottom: 1px solid var(--transparent-grey);
+  padding-bottom: 32px;
 }
 
 .about-me-list .about-list-text-box {
@@ -131,17 +114,31 @@
   justify-content: end;
 }
 
-li.ac.about-me-item p.ac-text {
-  width: 50%;
+li.ac.about-me-item div.ac-text {
   font: inherit;
   color: inherit;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  padding: 8px 68px 32px 8px;
+  width: 50%;
+  padding: 8px 68px 0px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li.ac.about-me-item:first-child div.ac-text {
+  gap: 32px;
+}
+
+li.ac.about-me-item div.ac-text p {
+  font: inherit;
+  color: inherit;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 
 @media screen and (max-width: 1439px) {
-  li.ac.about-me-item p.ac-text {
+  li.ac.about-me-item div.ac-text p {
     width: 100%;
     line-height: 1.5;
     letter-spacing: -0.02em;
