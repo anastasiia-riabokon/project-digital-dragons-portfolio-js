@@ -1,13 +1,17 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const stackList = document.querySelector('.stack-list');
-const nextBtn = document.querySelector('.js-arrow-wrap');
+import { Navigation, Keyboard } from 'swiper/modules';
 
 const swiper = new Swiper('.swiper', {
+  modules: [Navigation, Keyboard],
   direction: 'horizontal',
   loop: true,
   slidesPerView: 3,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.arrow-svg',
+  },
   breakpoints: {
     375: {
       slidesPerView: 2,
@@ -21,8 +25,4 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 6,
     },
   },
-});
-
-nextBtn.addEventListener('click', e => {
-  swiper.slideNext(300, false);
 });
