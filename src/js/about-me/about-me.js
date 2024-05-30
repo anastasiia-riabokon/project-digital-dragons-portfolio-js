@@ -48,7 +48,7 @@ function createAboutMarkup(array) {
   let aboutMarkup = '';
   array.forEach(unit => {
     const textMarkup = createAboutParagraph(unit);
-    const aboutUnitMarkup = `<li class="ac about-me-item"><div class="ac-header ac-trigger about-list-header-box"><h4 class="grey-accent-text">${unit.title}</h4>${arrowMarkup}</div>${textMarkup}</li>`;
+    const aboutUnitMarkup = `<li class="ac about-me-item"><div class="ac-header ac-trigger about-list-header-box"><h4 class="about-title grey-accent-text">${unit.title}</h4>${arrowMarkup}</div>${textMarkup}</li>`;
     aboutMarkup += aboutUnitMarkup;
   });
   return aboutMarkup;

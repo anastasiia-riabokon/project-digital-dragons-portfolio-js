@@ -63,6 +63,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .profile-photo img {
+    object-position: -30px 0px;
+  }
+}
+
 .about-me-text p {
   font-size: 36px;
   line-height: normal;
@@ -73,12 +79,15 @@
 @media screen and (max-width: 1439px) {
   .about-me-text p {
     font-size: 38px;
+    line-height: 1.05263;
+    letter-spacing: -0.03em;
   }
 }
 
 @media screen and (max-width: 767px) {
   .about-me-text p {
     font-size: 24px;
+    line-height: 1.16667;
     padding: 32px;
   }
 }
@@ -92,6 +101,7 @@
 /* #region LIST */
 
 .about-me-list {
+  font: inherit;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -138,18 +148,32 @@ li.ac.about-me-item div.ac-text p {
 }
 
 @media screen and (max-width: 1439px) {
-  li.ac.about-me-item div.ac-text p {
+  li.ac.about-me-item div.ac-text {
     width: 100%;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    padding: 8px 68px 32px 8px;
+    padding: 8px 68px 0px 8px;
+    gap: 5px;
+  }
+  li.ac.about-me-item:first-child div.ac-text {
+    gap: 16px;
   }
 }
 
-.about-list-header-box {
+@media screen and (max-width: 767px) {
+  li.ac.about-me-item div.ac-text {
+    gap: 10px;
+  }
+  li.ac.about-me-item:first-child div.ac-text {
+    gap: 32px;
+  }
+}
+
+li.ac.about-me-item div.about-list-header-box {
+  font: inherit;
   position: relative;
   height: fit-content;
   min-height: 40px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 
 .about-list-header-box button.arrow-button {
