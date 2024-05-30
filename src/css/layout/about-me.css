@@ -107,6 +107,25 @@
   margin: 0;
 }
 
+.about-me-list li.ac.about-me-item::after {
+  content: url('../img/icons.svg#horiz-line');
+  /* content: 'HOLA'; */
+  width: 1376px;
+  stroke: white;
+}
+
+@media screen and (max-width: 1439px) {
+  .about-me-list li.ac.about-me-item::after {
+    width: 704px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me-list li.ac.about-me-item::after {
+    width: 343px;
+  }
+}
+
 .about-me-list .about-list-text-box {
   display: flex;
   justify-content: end;
