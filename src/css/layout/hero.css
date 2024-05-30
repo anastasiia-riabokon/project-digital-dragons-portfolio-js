@@ -5,6 +5,7 @@
   background-position: center;
   padding-top: 300px;
   background-size: cover;
+  position: relative;
 }
 @media (min-resolution: 192dpi) {
   .hero.section {
