@@ -15,15 +15,13 @@
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .hero.section {
     height: 1024px;
-    background-image: url('../../img/hero/red-tablet_result.png');
-    background-position: left;
-    background-size: contain;
+    background-image: url('../../img/hero/red-tab.png');
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi) {
   .hero.section {
-    background-image: url('../../img/hero/red-tablet@2x_result.png');
+    background-image: url('../../img/hero/red-tab@2x.png');
   }
 }
 
@@ -31,15 +29,13 @@
   .hero.section {
     height: 812px;
     padding-top: 281px;
-    background-image: url('../../img/hero/red-mobile_result.png');
-    background-position: left;
-    background-size: contain;
+    background-image: url('../../img/hero/red-mob.png');
   }
 }
 
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero.section {
-    background-image: url('../../img/hero/red-mobile@2x_result.png');
+    background-image: url('../../img/hero/red-mob@2x.png');
   }
 }
 
