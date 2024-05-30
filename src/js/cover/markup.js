@@ -1,12 +1,3 @@
-function createImageRow(images) {
-  return images
-    .map(
-      image =>
-        `<img src="${image.src}" alt="${image.alt}" class="marquee__line">`
-    )
-    .join('');
-}
-
 const imagesData = [
   {
     src: '../img/covers/projects/project1.png',
@@ -58,13 +49,37 @@ const imagesData = [
     srcset: '../img/covers/projects/project10@2x.png 2x',
     alt: 'Project 10',
   },
+  {
+    src: '../img/covers/projects/project1.png',
+    srcset: '../img/covers/projects/project1@2x.png 2x',
+    alt: 'Project 1',
+  },
+  {
+    src: '../img/covers/projects/project2.png',
+    srcset: '../img/covers/projects/project2@2x.png 2x',
+    alt: 'Project 2',
+  },
+  {
+    src: '../img/covers/projects/project3.png',
+    srcset: '../img/covers/projects/project3@2x.png 2x',
+    alt: 'Project 3',
+  },
 ];
 
-const marqueeInner = document.querySelectorAll('.marquee__inner');
+function createImageRow(images) {
+  return images
+    .map(
+      image =>
+        `<img src="${image.src}" alt="${image.alt}" class="marquee__line">`
+    )
+    .join('');
+}
 
-imagesData.forEach((image, index) => {
-  const innerIndex = Math.floor(index / 10);
-  marqueeInner[
-    innerIndex
-  ].innerHTML += `<img src="${image.src}" srcset="${image.srcset}" alt="${image.alt}" class="marquee__line">`;
-});
+const marqueeInner = document.querySelector('.marquee__inner');
+const marqueeInnerOne = document.querySelector('.marquee__inner_one');
+const marqueeInnerTwo = document.querySelector('.marquee__inner_two');
+const markup = createImageRow(imagesData);
+
+marqueeInner.innerHTML = markup;
+marqueeInnerOne.innerHTML = markup;
+marqueeInnerTwo.innerHTML = markup;

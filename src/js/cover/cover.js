@@ -6,20 +6,26 @@ function isInViewport() {
   const rect = coversElement.getBoundingClientRect();
 
   const viewportMiddle =
-    (window.innerHeight || document.documentElement.clientHeight) / 2;
+    (window.innerHeight || document.documentElement.clientHeight) / 20;
 
   return rect.top <= viewportMiddle && rect.bottom >= viewportMiddle;
 }
 
+function startAnimation(e) {
+  if (isInViewport(e)) {
+    e.classList.add('animate');
+  } else {
+    e.classList.remove('animate');
+  }
+}
+
 function startAnimationIfVisible() {
-  const marqueeInner = document.querySelectorAll('.marquee__inner');
-  marqueeInner.forEach(inner => {
-    if (isInViewport(inner)) {
-      inner.classList.add('animate');
-    } else {
-      inner.classList.remove('animate');
-    }
-  });
+  const marqueeInner = document.querySelector('.marquee__inner');
+  const marqueeInnerOne = document.querySelector('.marquee__inner_one');
+  const marqueeInnerTwo = document.querySelector('.marquee__inner_two');
+  startAnimation(marqueeInner);
+  startAnimation(marqueeInnerOne);
+  startAnimation(marqueeInnerTwo);
 }
 
 window.addEventListener('scroll', startAnimationIfVisible);
