@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { postRequest } from '../api';
+import { sendRequest } from '../api';
 
 import * as basicLightbox from 'basiclightbox';
 import 'basicLightbox/src/styles/main.scss';
@@ -58,7 +58,7 @@ formEl.addEventListener('submit', async evt => {
   const commentValue = evt.target.comment.value.trim();
 
   try {
-    await postRequest(emailValue, commentValue);
+    await sendRequest(emailValue, commentValue);
 
     modal.show();
 

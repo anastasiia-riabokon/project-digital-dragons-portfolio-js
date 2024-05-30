@@ -6,7 +6,6 @@ body {
 
 h1 {
   margin: 0 auto;
-  margin-top: 300px;
   font-weight: 500;
   font-size: 90px;
   line-height: 1;
@@ -54,11 +53,18 @@ p {
 }
 
 .section {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 82px;
+  padding-bottom: 82px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1439px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .section {
     padding-top: 32px;
     padding-bottom: 32px;
