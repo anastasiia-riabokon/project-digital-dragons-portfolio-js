@@ -3,8 +3,8 @@ import iconsSvg from '../../img/icons.svg';
 
 function iconTemplate({ iconName, svgHeight, svgWidth }) {
   return `
-  <button class="${iconName}">
-<svg class="icon-project icon-project-${iconName}" width="${svgWidth}" height="${svgHeight}">
+  <button class="btn-${iconName}">
+<svg class="icon-arrow icon-${iconName}" width="${svgWidth}" height="${svgHeight}">
   <use href="${iconsSvg}#${iconName}"></use>
 </svg>
 </button>
