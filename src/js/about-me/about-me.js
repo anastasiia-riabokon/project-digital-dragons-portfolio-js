@@ -37,7 +37,7 @@ function renderAboutSection(array) {
 }
 
 const arrowMarkup =
-  '<button class="arrow-button"><svg class="arrow-icon js-down" width="20" height="20"><use href="./img/icons.svg#accordion-arrow"></use></svg></button>';
+  '<button class="arrow-button"><svg class="arrow-icon js-down" width="20" height="20"><use href="./img/icons.svg#arrow-down"></use></svg></button>';
 
 function createAboutParagraph({ content }) {
   const text = content.join('<br />');
@@ -59,18 +59,27 @@ function createAboutMarkup(array) {
 
 const containerOptions = {
   beforeOpen: function (currentElement) {
-    console.log(currentElement);
     currentElement
       .querySelector('.js-down')
       .setAttribute('transform', 'rotate(180)');
+    scrollItems();
   },
   beforeClose: function (currentElement) {
-    console.log(currentElement);
     currentElement
       .querySelector('.js-down')
       .setAttribute('transform', 'rotate(0))');
   },
 };
+
+function scrollItems() {
+  const aboutItem = aboutSectionParentEl.querySelector('li.is-active');
+  const rect = aboutItem.getBoundingClientRect();
+  window.scrollBy({
+    top: rect.height,
+    left: 0,
+    behavior: 'smooth',
+  });
+}
 
 // ================================== RENDER ==================================
 

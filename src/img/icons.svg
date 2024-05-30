@@ -1,12 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-  <symbol id="accordion-arrow" viewBox="0 0 32 32">
+    <symbol id="arrow-down" viewBox="0 0 32 32">
       <path stroke-width="3.2" d="m24 12-8 8-8-8"/>
     </symbol>
-    <symbol id="accordion-down" viewBox="0 0 32 32">
-      <path stroke-width="3.2" d="m24 12-8 8-8-8"/>
-    </symbol>
-    <symbol id="arrow-upp" viewBox="0 0 32 32">
+    <symbol id="arrow-up" viewBox="0 0 32 32">
       <path stroke-width="3.2" d="m24 20-8-8-8 8"/>
     </symbol>
     <symbol id="arrow-left" viewBox="0 0 32 32">
