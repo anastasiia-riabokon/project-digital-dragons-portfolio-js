@@ -1,5 +1,9 @@
 .header {
   padding-top: 32px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 .header-wrapper {
   display: flex;
@@ -15,6 +19,17 @@
 .menu {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 82%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 .menu-btn {
   background: none;
@@ -28,6 +43,15 @@
   line-height: normal;
   letter-spacing: -0.32px;
 }
+
+.menu-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
 .order-btn {
   display: flex;
   width: 163px;
@@ -45,6 +69,13 @@
   letter-spacing: -0.32px;
   border: none;
 }
+
+@media only screen and (max-width: 767px) {
+  .order-btn {
+    display: none;
+  }
+}
+
 @media screen and (hover: hover) {
   .order-btn:hover {
     border-color: var(--hover-coral);
@@ -58,5 +89,18 @@
 @media screen and not (hover: hover) {
   .order-btn:active {
     border-color: var(--hover-coral);
+  }
+}
+
+.menu-burger {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-burger {
+    display: none;
   }
 }
