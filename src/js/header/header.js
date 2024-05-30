@@ -5,7 +5,7 @@ menuList.style.display = 'none';
 
 menuBtn.addEventListener('click', () => {
   if (menuList.style.display === 'none') {
-    menuList.style.display = 'block';
+    menuList.style.display = 'flex';
   } else {
     menuList.style.display = 'none';
   }

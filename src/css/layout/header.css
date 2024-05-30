@@ -52,6 +52,7 @@
   flex-direction: column;
   gap: 8px;
   align-items: center;
+  justify-content: center;
 }
 
 .order-btn {
@@ -98,11 +99,14 @@
   width: 28px;
   height: 28px;
   background: none;
-  border: 1px solid #fafafa; /* прибрати */
+  border: none;
 }
 
 @media only screen and (min-width: 768px) {
   .menu-burger {
     display: none;
   }
+}
+.menu-burger-icon {
+  stroke: var(--white);
 }
