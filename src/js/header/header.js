@@ -10,3 +10,5 @@ menuBtn.addEventListener('click', () => {
     menuList.style.display = 'none';
   }
 });
+
+const burgerBtn = document.querySelector('.menu-burger');
