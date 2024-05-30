@@ -6,7 +6,7 @@ function isInViewport() {
   const rect = coversElement.getBoundingClientRect();
 
   const viewportMiddle =
-    (window.innerHeight || document.documentElement.clientHeight) / 20;
+    (window.innerHeight || document.documentElement.clientHeight) / 50;
 
   return rect.top <= viewportMiddle && rect.bottom >= viewportMiddle;
 }
