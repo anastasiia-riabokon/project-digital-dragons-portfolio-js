@@ -4,11 +4,18 @@ function isInViewport() {
   const coversElement = document.querySelector('.marquee__inner');
 
   const rect = coversElement.getBoundingClientRect();
+  const containerTop = rect.top;
+  const containerBottom = rect.bottom;
+  const viewportHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+  const bottomThreshold = containerBottom - viewportHeight;
+  const topThreshold = containerTop + viewportHeight;
+  return bottomThreshold <= 0 && topThreshold >= 0;
 
-  const viewportMiddle =
-    (window.innerHeight || document.documentElement.clientHeight) / 50;
+  //   const viewportMiddle =
+  //     (window.innerHeight || document.documentElement.clientHeight) / 50;
 
-  return rect.top <= viewportMiddle && rect.bottom >= viewportMiddle;
+  //   return rect.top < viewportMiddle && rect.bottom > viewportMiddle;
 }
 
 function startAnimation(e) {

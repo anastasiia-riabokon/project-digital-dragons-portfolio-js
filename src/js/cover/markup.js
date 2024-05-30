@@ -75,12 +75,12 @@ function createImageRow(images) {
     .join('');
 }
 
+const markup = createImageRow(imagesData);
+
 const marqueeInner = document.querySelector('.marquee__inner');
 const marqueeInnerOne = document.querySelector('.marquee__inner_one');
 const marqueeInnerTwo = document.querySelector('.marquee__inner_two');
 const marqueeInnerThree = document.querySelector('.marquee__inner_three');
-
-const markup = createImageRow(imagesData);
 
 marqueeInner.innerHTML = markup;
 marqueeInnerOne.innerHTML = markup;
