@@ -6,7 +6,7 @@
   position: relative;
 }
 
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1440px) {
   #lets-work-together .container {
     padding: 0 196px;
   }
