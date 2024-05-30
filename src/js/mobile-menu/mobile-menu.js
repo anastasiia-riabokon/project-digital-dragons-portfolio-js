@@ -11,8 +11,8 @@ modalCloseBtn.addEventListener('click', function () {
   modalMenu.classList.remove('is-open');
 });
 
-menuLinks.forEach(link => {
-  link.addEventListener('click', function () {
+menuLinks.addEventListener('click', function (e) {
+  if (e.target.classList.contains('menu-list-link')) {
     modalMenu.classList.remove('is-open');
-  });
+  }
 });
