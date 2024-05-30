@@ -130,6 +130,7 @@
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.28px;
+  pointer-events: none;
 }
 
 .form-success-text {
