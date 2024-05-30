@@ -4,5 +4,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: blueviolet;
+  background-image: url(../../img/hero/red-mob-menu.png);
+  /* opacity: 0;
+  pointer-events: none; */
+}
+.modal-button {
+  background: none;
+  border: 1px solid white; /* прибрати */
+}
+.modal-close {
+  fill: var(--white);
 }
