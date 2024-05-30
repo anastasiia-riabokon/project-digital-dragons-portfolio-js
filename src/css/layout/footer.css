@@ -12,6 +12,7 @@
   left: 880px;
   z-index: -100000;
   pointer-events: none;
+  opacity: 0.4;
 }
 
 @media only screen and (max-width: 1439px) {
@@ -23,8 +24,8 @@
 
 @media only screen and (max-width: 767px) {
   .back-photo {
-    top: -62px;
-    left: 290px;
+    top: -30px;
+    left: 300px;
   }
 }
 
@@ -248,7 +249,7 @@
   }
 }
 
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
   .footer-btn:active {
     background-color: var(--hover-coral);
     box-shadow: 0 0 20px var(--hover-coral);
@@ -293,9 +294,17 @@
   }
 }
 
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
-  border: 1px solid var(--white);
+@media (hover: hover) {
+  .footer-contacts-link:hover,
+  .footer-contacts-link:focus {
+    border: 1px solid var(--white);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .footer-contacts-link:active {
+    border: 1px solid var(--white);
+  }
 }
 
 /* #endregion Contacts*/
