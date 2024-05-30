@@ -3,6 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
+
+.covers .container {
+  padding: 0;
+}
 .content {
   position: relative;
 }
@@ -10,10 +14,10 @@
   animation: animateBg 10s linear infinite;
   background-image: linear-gradient(
     110deg,
-    var(--coral),
     var(--black),
     var(--coral),
-    var(--black)
+    var(--black),
+    var(--coral)
   );
   background-size: 300% 100%;
   position: absolute;
@@ -23,10 +27,6 @@
   right: -800px;
   left: 0;
   overflow: hidden;
-  font-family: 'Pridi', sans-serif;
-  font-weight: 600;
-  font-size: 34px;
-  text-transform: uppercase;
 }
 @keyframes animateBg {
   0% {
@@ -45,9 +45,12 @@
 
 .marquee__inner,
 .marquee__inner_one,
-.marquee__inner_two {
+.marquee__inner_two,
+.marquee__inner_three {
   display: flex;
   transform: rotate(16deg);
+  position: relative;
+  top: -200px;
 }
 
 .marquee__line {
@@ -60,6 +63,7 @@
   width: 544px;
   height: 314px;
   white-space: nowrap;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 375px) {
@@ -72,7 +76,7 @@
 .marquee__inner.animate .marquee__line,
 .marquee__inner_two.animate .marquee__line {
   animation-name: marqueeLine;
-  animation-duration: 15s;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -87,9 +91,10 @@
   }
 }
 
-.marquee__inner_one.animate .marquee__line {
+.marquee__inner_one.animate .marquee__line,
+.marquee__inner_three.animate .marquee__line {
   animation-name: marqueeLineOne;
-  animation-duration: 25s;
+  animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }

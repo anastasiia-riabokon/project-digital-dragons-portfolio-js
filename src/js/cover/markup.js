@@ -78,8 +78,11 @@ function createImageRow(images) {
 const marqueeInner = document.querySelector('.marquee__inner');
 const marqueeInnerOne = document.querySelector('.marquee__inner_one');
 const marqueeInnerTwo = document.querySelector('.marquee__inner_two');
+const marqueeInnerThree = document.querySelector('.marquee__inner_three');
+
 const markup = createImageRow(imagesData);
 
 marqueeInner.innerHTML = markup;
 marqueeInnerOne.innerHTML = markup;
 marqueeInnerTwo.innerHTML = markup;
+marqueeInnerThree.innerHTML = markup;

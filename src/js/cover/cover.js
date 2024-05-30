@@ -23,9 +23,12 @@ function startAnimationIfVisible() {
   const marqueeInner = document.querySelector('.marquee__inner');
   const marqueeInnerOne = document.querySelector('.marquee__inner_one');
   const marqueeInnerTwo = document.querySelector('.marquee__inner_two');
+  const marqueeInnerThree = document.querySelector('.marquee__inner_three');
+
   startAnimation(marqueeInner);
   startAnimation(marqueeInnerOne);
   startAnimation(marqueeInnerTwo);
+  startAnimation(marqueeInnerThree);
 }
 
 window.addEventListener('scroll', startAnimationIfVisible);
