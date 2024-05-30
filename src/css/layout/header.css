@@ -56,7 +56,6 @@
   flex-direction: column;
   gap: 8px;
   align-items: center;
-  /* display: none; */
 }
 
 .order-btn {
