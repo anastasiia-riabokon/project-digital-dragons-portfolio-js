@@ -1,8 +1,11 @@
 import axios from 'axios';
-import { fetchReviews, postRequest } from '../api';
+import { postRequest } from '../api';
 
 import * as basicLightbox from 'basiclightbox';
 import 'basicLightbox/src/styles/main.scss';
+
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const formEl = document.querySelector('.footer-form');
 const successMessageEl = document.querySelector('.form-success-text');
@@ -55,17 +58,28 @@ formEl.addEventListener('submit', async evt => {
   const commentValue = evt.target.comment.value.trim();
 
   try {
-    const response = await axios.post({
-      email: emailValue,
-      comment: commentValue,
-    });
+    await postRequest(emailValue, commentValue);
 
     modal.show();
 
     formEl.reset();
+    successMessageEl.style.opacity = '0';
+    errorMessageEl.style.opacity = '0';
   } catch (error) {
+    warningAlert();
     console.error('Error sending request:', error);
   }
-
-  formEl.reset();
 });
+
+function warningAlert() {
+  iziToast.warning({
+    title: 'Warning',
+    titleColor: 'white',
+    message: 'Unknown error',
+    messageColor: 'white',
+    color: '#ED3B44',
+    closeOnClick: true,
+    position: 'topRight',
+    timeout: 4000,
+  });
+}

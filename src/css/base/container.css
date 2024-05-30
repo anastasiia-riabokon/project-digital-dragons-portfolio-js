@@ -2,9 +2,6 @@
   max-width: 1440px;
   padding: 0 32px;
   margin: 0 auto;
-
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 
 @media only screen and (max-width: 1439px) {
