@@ -1,0 +1,83 @@
+<footer class="section" id="lets-work-together">
+  <div class="container">
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="../img/footer/background-photo/glass-effect767px.png"
+        width="85"
+        height="679"
+      />
+      <source
+        media="(max-width: 1439px)"
+        srcset="../img/footer/background-photo/glass-effect1439px.png"
+        width="197"
+        height="679"
+      />
+      <source
+        media="(min-width: 1440px)"
+        srcset="../img/footer/background-photo/glass-effect1440px.png"
+        width="400"
+        height="636"
+      />
+      <img
+        class="back-photo"
+        src="../img/footer/background-photo/glass-effect1440px.png"
+        alt="Background photo"
+        width="400"
+        height="636"
+      />
+    </picture>
+    <div class="footer-text">
+      <div class="footer-text-container">
+        <img
+          class="footer-text-img"
+          src="./img/footer/photo-man.png"
+          alt="Photo of man"
+          width="44"
+          height="44"
+        />
+        <h2 class="footer-text-title">Let’s <span class="coral">work</span></h2>
+      </div>
+      <h2 class="footer-text-title">together</h2>
+    </div>
+
+    <form class="footer-form" action="/submit" method="post">
+      <div class="footer-form-container">
+        <input
+          class="footer-form-input footer-form-email"
+          id="email"
+          type="text"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          autocomplete="off"
+          required
+        />
+        <span class="form-span form-success-text">Success!</span>
+        <span class="form-span form-error-text">Invalid email, try again</span>
+      </div>
+      <div class="footer-form-container">
+        <input
+          class="footer-form-input"
+          id="comment"
+          type="text"
+          name="comment"
+          placeholder="comments"
+          autocomplete="off"
+          required
+        />
+      </div>
+
+      <button class="footer-btn" type="submit">Send</button>
+    </form>
+
+    <address class="footer-contacts">
+      <a class="footer-contacts-link" href="mailto:lloydjefferson@gmail.com"
+        >lloydjefferson@gmail.com</a
+      >
+      <a class="footer-contacts-link" href="tel:+3801111111111"
+        >+380 11 1111 11 11</a
+      >
+    </address>
+  </div>
+</footer>
