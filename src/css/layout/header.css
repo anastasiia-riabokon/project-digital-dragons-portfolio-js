@@ -14,7 +14,13 @@
   gap: 8px;
 }
 .logo-text {
+  color: var(--white);
+  font-family: 'Inter Tight';
   font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
 }
 .menu {
   display: flex;
@@ -22,7 +28,7 @@
   position: absolute;
   z-index: 1;
   left: 50%;
-  top: 82%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -50,6 +56,7 @@
   flex-direction: column;
   gap: 8px;
   align-items: center;
+  /* display: none; */
 }
 
 .order-btn {
@@ -96,7 +103,7 @@
   width: 28px;
   height: 28px;
   background: none;
-  border: 1px solid #fafafa;
+  border: 1px solid #fafafa; /* прибрати */
 }
 
 @media only screen and (min-width: 768px) {
