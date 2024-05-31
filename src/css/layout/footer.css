@@ -47,7 +47,7 @@
 
 @media only screen and (max-width: 767px) {
   .footer-text {
-    width: 542px;
+    width: 267px;
     height: auto;
   }
 }
@@ -124,7 +124,6 @@
 .footer-form-container {
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 20px;
 
   position: relative;
@@ -159,9 +158,6 @@
 .footer-form-input {
   width: 390px;
   color: rgba(250, 250, 250, 0.6);
-  font-family: 'Inter Tight';
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.32px;
