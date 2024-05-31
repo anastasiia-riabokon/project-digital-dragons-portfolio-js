@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     modules: [Navigation, Keyboard, EffectCreative],
     direction: 'horizontal',
     slidesPerView: 1,
+    slidesPerGroup: 1,
     speed: 500,
     navigation: {
       nextEl: '.btn-project-arrow-right',

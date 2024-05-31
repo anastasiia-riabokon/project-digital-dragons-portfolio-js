@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import { refs } from './refs';
 
 export function onMySwiper() {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.js-swiper__reviews', {
     modules: [Navigation, Pagination, Keyboard],
     direction: 'horizontal',
 
