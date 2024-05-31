@@ -6,14 +6,28 @@
   color: var(--white);
 }
 
+.about-me {
+  padding: 96px 0;
+}
+
+@media screen and (max-width: 1439px) {
+  .about-me {
+    padding: 64px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me {
+    padding-bottom: 32px;
+  }
+}
+
 /* #region CAPTION */
 .about-me-caption {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 96px;
   gap: 16px;
   align-items: center;
-  margin-bottom: 96px;
 }
 
 @media screen and (max-width: 1439px) {
@@ -144,7 +158,7 @@ li.ac.about-me-item div.ac-text p {
 @media screen and (max-width: 1439px) {
   li.ac.about-me-item div.ac-text {
     width: 100%;
-    padding: 8px 68px 0px 8px;
+    padding: 0px;
     gap: 5px;
   }
   li.ac.about-me-item:first-child div.ac-text {
