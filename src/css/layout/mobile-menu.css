@@ -15,11 +15,13 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 302px;
   padding-bottom: 64px;
+  z-index: 3;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.7s ease;
 }
 
-.modal-mob-menu .is-open {
+.modal-mob-menu.is-open {
   opacity: 1;
   pointer-events: all;
 }
@@ -43,8 +45,18 @@
   justify-content: center;
 }
 
-.menu-list-link {
+.mob-list-link {
   text-decoration: underline;
+}
+
+.mob-list-link:focus {
+  color: var(--coral);
+}
+
+@media screen and not (hover: hover) {
+  .mob-list-link:active {
+    color: var(--coral);
+  }
 }
 
 .order-btn-mob {
@@ -66,11 +78,11 @@
   margin: 0 auto;
 }
 .order-btn-mob:focus {
-  border-color: var(--hover-coral);
+  background-color: var(--hover-coral);
 }
 
 @media screen and not (hover: hover) {
   .order-btn-mob:active {
-    border-color: var(--hover-coral);
+    background-color: var(--hover-coral);
   }
 }
