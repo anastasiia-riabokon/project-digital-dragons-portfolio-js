@@ -148,13 +148,6 @@ li.ac.about-me-item:first-child div.ac-text {
   gap: 32px;
 }
 
-li.ac.about-me-item div.ac-text p {
-  font: inherit;
-  color: inherit;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-}
-
 @media screen and (max-width: 1439px) {
   li.ac.about-me-item div.ac-text {
     width: 100%;
