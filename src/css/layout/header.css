@@ -37,11 +37,7 @@
   border: none;
   text-decoration: underline;
   color: var(--white);
-  font-family: 'Inter Tight';
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: -0.32px;
   padding: 10px;
 }
@@ -57,6 +53,26 @@
   transition: opacity 0.5s ease;
 }
 
+.menu-list-item {
+  transition-property: color;
+}
+
+@media screen and (hover: hover) {
+  .menu-list-item:hover {
+    color: var(--coral);
+  }
+}
+
+.menu-list-item:focus {
+  color: var(--coral);
+}
+
+@media screen and not (hover: hover) {
+  .menu-list-item:active {
+    color: var(--coral);
+  }
+}
+
 .order-btn {
   display: flex;
   width: 163px;
@@ -65,14 +81,8 @@
   align-items: center;
   border-radius: 60px;
   background-color: var(--coral);
-  color: var(--white);
-  font-family: 'Inter Tight';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.32px;
   border: none;
+  transition-property: background-color;
 }
 
 @media only screen and (max-width: 767px) {
