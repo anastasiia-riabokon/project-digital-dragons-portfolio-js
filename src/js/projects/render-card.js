@@ -20,6 +20,7 @@ function cardTemplate(project) {
           href="${project.linkProject}"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="link see project"
         >
           See project
         </a>

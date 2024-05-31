@@ -12,7 +12,7 @@ export const projects = [
       'https://github.com/anastasiia-riabokon/project-digital-dragons-portfolio-js/',
     titleImage: 'project book',
     hashtags: ['#react', '#js', '#node js', '#git'],
-    title: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    title: 'Programming Across Borders:&nbsp;Ideas, Technologies, Innovations',
   },
   {
     imgLinkDesk: images.imgDogDesk,
@@ -25,7 +25,7 @@ export const projects = [
       'https://github.com/anastasiia-riabokon/project-digital-dragons-portfolio-js/',
     titleImage: 'project dog',
     hashtags: ['#react', '#js', '#node js', '#git'],
-    title: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    title: 'Programming Across Borders:&nbsp;Ideas, Technologies, Innovations',
   },
   {
     imgLinkDesk: images.imgRegisterDesk,
@@ -38,6 +38,6 @@ export const projects = [
       'https://github.com/anastasiia-riabokon/project-digital-dragons-portfolio-js/',
     titleImage: 'project register',
     hashtags: ['#react', '#js', '#node js', '#git'],
-    title: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    title: 'Programming Across Borders:&nbsp;Ideas, Technologies, Innovations',
   },
 ];
