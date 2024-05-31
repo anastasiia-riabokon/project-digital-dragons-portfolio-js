@@ -56,7 +56,7 @@
   }
 }
 
-.chosen {
+.swiper-slide-active {
   background-color: var(--coral);
 }
 
