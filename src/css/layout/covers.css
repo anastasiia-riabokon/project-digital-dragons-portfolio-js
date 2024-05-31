@@ -8,7 +8,7 @@
   padding: 0;
 }
 .content {
-  position: relative;
+  /* position: relative; */
 }
 .marquee {
   animation: animateBg 10s linear infinite;
@@ -20,12 +20,12 @@
     var(--coral)
   );
   background-size: 300% 100%;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 960px;
   overflow: hidden;
-  right: -800px;
-  left: 0;
+  /* right: -800px;
+  left: 0; */
   overflow: hidden;
 }
 @keyframes animateBg {
