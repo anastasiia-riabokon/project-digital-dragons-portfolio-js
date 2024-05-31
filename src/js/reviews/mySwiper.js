@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { refs } from './refs';
 
-export function onSwiper() {
+export function onMySwiper() {
   const swiper = new Swiper('.swiper', {
     modules: [Navigation, Pagination, Keyboard],
     direction: 'horizontal',
@@ -19,8 +19,8 @@ export function onSwiper() {
     speed: 1000,
 
     navigation: {
-      nextEl: '.btn-arrow-right',
-      prevEl: '.btn-arrow-left',
+      nextEl: '.btn-right-js',
+      prevEl: '.btn-left-js',
     },
 
     keyboard: {

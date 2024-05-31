@@ -1,15 +1,16 @@
 import { refs } from './refs';
 import { fetchReviews } from '../api';
-import { onSwiper } from './swiper';
 import { usersTemplate } from './templates';
 import { showErrorMessage } from './show_error';
 import { hiddenBtn } from './show_error';
+import { onMySwiper } from './mySwiper';
 
 window.addEventListener('DOMContentLoaded', renderReviews);
 
 async function renderReviews() {
   try {
     const users = await fetchReviews();
+    console.log(users);
 
     if (users.length === 0) {
       showErrorMessage();
@@ -19,7 +20,8 @@ async function renderReviews() {
     const markup = usersTemplate(users);
 
     refs.ulEl.innerHTML = markup;
-    onSwiper();
+
+    onMySwiper();
   } catch (error) {
     hiddenBtn();
     refs.ulEl.innerHTML = "<li class='not-found'>Not found reviews</li>";

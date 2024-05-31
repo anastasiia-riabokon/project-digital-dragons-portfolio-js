@@ -11,17 +11,19 @@ window.addEventListener('DOMContentLoaded', () => {
   renderImg(ref.projectSectionContainer);
   renderSvg(ref.arrowContainer);
 
-  const arrowRight = ref.arrowContainer.querySelector('.btn-arrow-right');
-  const arrowLeft = ref.arrowContainer.querySelector('.btn-arrow-left');
+  const arrowRight = ref.arrowContainer.querySelector(
+    '.btn-project-arrow-right'
+  );
+  const arrowLeft = ref.arrowContainer.querySelector('.btn-project-arrow-left');
 
-  const swiper = new Swiper('#slider', {
+  const mySwiper = new Swiper('.mySwiper', {
     modules: [Navigation, Keyboard, EffectCreative],
     direction: 'horizontal',
     slidesPerView: 1,
     speed: 500,
     navigation: {
-      nextEl: '.btn-arrow-right',
-      prevEl: '.btn-arrow-left',
+      nextEl: '.btn-project-arrow-right',
+      prevEl: '.btn-project-arrow-left',
     },
     keyboard: {
       enabled: true,
@@ -39,8 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  UpdStatusArrow(swiper, arrowLeft, arrowRight);
-  swiper.on('reachBeginning slideChange reachEnd', () =>
-    UpdStatusArrow(swiper, arrowLeft, arrowRight)
+  UpdStatusArrow(mySwiper, arrowLeft, arrowRight);
+  mySwiper.on('reachBeginning slideChange reachEnd', () =>
+    UpdStatusArrow(mySwiper, arrowLeft, arrowRight)
   );
 });
