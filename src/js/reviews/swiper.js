@@ -3,6 +3,7 @@ import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { refs } from './refs';
 
 export function onSwiper() {
   const swiper = new Swiper('.swiper', {
@@ -10,8 +11,6 @@ export function onSwiper() {
     direction: 'horizontal',
 
     slidesPerView: 4,
-    // watchOverflow: true,
-    // autoHeight: false,
 
     simulateTouch: true,
 
@@ -42,46 +41,21 @@ export function onSwiper() {
     },
   });
 
-  // on: {
-  // }
-
-  // UpdStatusArrow(swiper);
-
-  UpdStatusArrow(swiper, refs.prevBtn, refs.nextBtn);
-
-  swiper.on('reachBeginning slideChange reachEnd', () =>
-    UpdStatusArrow(swiper, refs.prevBtn, refs.nextBtn)
-  );
+  updateButtons(swiper);
+  swiper.on('reachBeginning slideChange reachEnd', () => updateButtons(swiper));
 }
 
-// function updateButtons(swiper) {
-//   const { isBeginning, isEnd } = swiper;
-//   if (isBeginning) {
-//     refs.btnPrev.classList.remove('active');
-//   } else {
-//     refs.btnPrev.classList.add('active');
-//   }
+function updateButtons(swiper) {
+  const { isBeginning, isEnd } = swiper;
+  if (isBeginning) {
+    refs.btnPrev.classList.remove('active');
+  } else {
+    refs.btnPrev.classList.add('active');
+  }
 
-//   if (isEnd) {
-//     refs.btnNext.classList.remove('active');
-//   } else {
-//     refs.btnNext.classList.add('active');
-//   }
-// }
-// function btnActive() {
-//   refs.btnPrev.classList.add('active');
-// }
-
-// function btnNotActive() {
-//   refs.btnPrev.classList.remove('active');
-// }
-
-function UpdStatusArrow(swiperInstance, prevBtn, nextBtn) {
-  swiperInstance.isEnd
-    ? nextBtn.classList.remove('active')
-    : nextBtn.classList.add('active');
-
-  swiperInstance.isBeginning
-    ? prevBtn.classList.remove('active')
-    : prevBtn.classList.add('active');
+  if (isEnd) {
+    refs.btnNext.classList.remove('active');
+  } else {
+    refs.btnNext.classList.add('active');
+  }
 }
