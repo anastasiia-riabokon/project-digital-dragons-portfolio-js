@@ -16,6 +16,7 @@
   "author": "digital dragons <a.ryabokon20@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
     "axios": "^1.7.2",
     "basiclightbox": "^5.0.4",
     "izitoast": "^1.4.0",
