@@ -48,6 +48,13 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .faq-list li.ac.faq-list-item:nth-child(odd),
+  .faq-list li.ac.faq-list-item:nth-child(even) {
+    padding: 20px 0;
+  }
+}
+
 li.faq-list-item div.faq-list-header-box {
   position: relative;
   height: fit-content;
@@ -59,6 +66,12 @@ li.faq-list-item div.faq-list-header-box {
 h5.faq-list-header {
   max-width: 580px;
   color: var(--white);
+}
+
+@media only screen and (max-width: 767px) {
+  h5.faq-list-header {
+    max-width: 265px;
+  }
 }
 
 li.faq-list-item div.faq-list-content-box > p.faq-list-content {
