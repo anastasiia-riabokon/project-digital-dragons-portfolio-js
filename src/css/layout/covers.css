@@ -13,7 +13,7 @@
 .marquee {
   animation: animateBg 10s linear infinite;
   background-image: linear-gradient(
-    x 110deg,
+    110deg,
     var(--black),
     var(--coral),
     var(--black),
