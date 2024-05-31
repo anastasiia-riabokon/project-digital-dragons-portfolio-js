@@ -76,3 +76,9 @@
   stroke: #3b3b3b;
   fill: none;
 }
+
+.swiper-button-lock {
+  display: block !important; /* Завжди показувати кнопки */
+  opacity: 0.5; /* Зменшити непрозорість, щоб вказати, що вони неактивні */
+  cursor: default; /* Змінити курсор на стандартний */
+}

@@ -2,6 +2,9 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import { Navigation, Keyboard } from 'swiper/modules';
 
+const nextButton = document.querySelector('.js-arrow');
+const slidesList = document.querySelector('.js-stack-list');
+
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Keyboard],
   direction: 'horizontal',
@@ -11,6 +14,9 @@ const swiper = new Swiper('.swiper', {
     enabled: true,
     onlyInViewport: true,
     pageUpDown: true,
+  },
+  navigation: {
+    nextEl: '.js-arrow',
   },
   breakpoints: {
     375: {
@@ -25,12 +31,13 @@ const swiper = new Swiper('.swiper', {
     1440: {
       slidesPerView: 6,
       slidesPerGroup: 1,
-      loop: false,
     },
   },
   on: {
     click() {
       const clickedSlideIndex = this.clickedIndex;
+      console.log();
+      this.activeIndex = clickedSlideIndex;
       if (clickedSlideIndex !== undefined) {
         this.slides.forEach(slide =>
           slide.classList.remove('swiper-slide-active')
@@ -41,11 +48,17 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const nextButton = document.querySelector('.js-arrow');
-
 nextButton.addEventListener('click', () => {
-  swiper.slideNext();
+  console.log(foo.dataset.id);
 });
+
+slidesList.addEventListener('click', e => {
+  console.log(foo().dataset.id);
+});
+
+const foo = () => {
+  return slidesList.querySelector('.swiper-slide-active');
+};
 
 // ! Для зображень, виявлення ширини екрана
 // function getDeviceType() {
