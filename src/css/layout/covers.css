@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.covers .container {
+  padding: 0;
+}
+.content {
+  /* position: relative; */
+}
+.marquee {
+  animation: animateBg 10s linear infinite;
+  background-image: linear-gradient(
+    110deg,
+    var(--black),
+    var(--coral),
+    var(--black),
+    var(--coral)
+  );
+  background-size: 300% 100%;
+  /* position: absolute; */
+  width: 100%;
+  height: 960px;
+  overflow: hidden;
+  /* right: -800px;
+  left: 0; */
+  overflow: hidden;
+}
+@keyframes animateBg {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .marquee {
+    height: 508px;
+  }
+}
+
+.marquee__inner,
+.marquee__inner_one,
+.marquee__inner_two,
+.marquee__inner_three {
+  display: flex;
+  transform: rotate(16deg);
+  position: relative;
+  top: -200px;
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  margin-right: 45px;
+  margin-bottom: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 544px;
+  height: 314px;
+  white-space: nowrap;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .marquee__line {
+    width: 282px;
+    height: 162px;
+  }
+}
+
+.marquee__inner.animate .marquee__line,
+.marquee__inner_two.animate .marquee__line {
+  animation-name: marqueeLine;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-1085%);
+  }
+}
+
+.marquee__inner_one.animate .marquee__line,
+.marquee__inner_three.animate .marquee__line {
+  animation-name: marqueeLineOne;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLineOne {
+  from {
+    transform: translateX(-1085%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Hello :) */

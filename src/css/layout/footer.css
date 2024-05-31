@@ -1,0 +1,371 @@
+/* #region Footer*/
+
+/* #region F-section, back-photo*/
+
+#lets-work-together .container {
+  position: relative;
+}
+
+@media only screen and (min-width: 1440px) {
+  #lets-work-together .container {
+    padding: 0 196px;
+  }
+}
+
+.back-photo {
+  position: absolute;
+  top: -124px;
+  left: 880px;
+  z-index: -100000;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 1439px) {
+  .back-photo {
+    top: -124px;
+    left: 570px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .back-photo {
+    top: -30px;
+    left: 300px;
+  }
+}
+
+/* #endregion F-section, back-photo*/
+
+/* #region Text */
+
+.footer-text {
+  width: 542px;
+  height: 146px;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-text {
+    width: 267px;
+    height: auto;
+  }
+}
+
+.footer-text-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-text-container {
+    gap: 8px;
+  }
+}
+
+.footer-text-img {
+  margin-top: 5px;
+
+  width: 70px;
+  height: 70px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-text-img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.footer-text-title {
+  color: #fafafa;
+
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -1.92px;
+
+  margin-top: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-text-title {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    margin-top: 4px;
+  }
+}
+
+/* #endregion Text */
+
+/* #region Form*/
+
+.footer-form {
+  margin-top: 18px;
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-form {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 63px;
+    margin-bottom: 64px;
+  }
+}
+
+.footer-form-container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+
+  position: relative;
+}
+
+.form-span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  pointer-events: none;
+}
+
+.form-success-text {
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  color: var(--green);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.form-error-text {
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  color: #e74a3b;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.footer-form-input {
+  width: 390px;
+  color: rgba(250, 250, 250, 0.6);
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  outline: none;
+  padding-bottom: 20px;
+  transition: border-bottom 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 1439px) {
+  .footer-form-input {
+    width: 245px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-form-input {
+    width: 343px;
+  }
+}
+
+.footer-form-input#comment {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer-form-input:hover,
+.footer-form-input:focus {
+  color: var(--white);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+.footer-form-email:not(:placeholder-shown):invalid {
+  border-bottom: 1px solid #e74a3b;
+}
+
+.footer-form-email:valid {
+  border-bottom: 1px solid var(--green);
+}
+
+.footer-btn {
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  outline: inherit;
+  background-color: var(--coral);
+
+  color: #fafafa;
+  font-weight: 500;
+  line-height: var(--white);
+  letter-spacing: -0.32px;
+
+  margin-left: 54px;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1439px) {
+  .footer-btn {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-btn {
+    margin-top: 16px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (hover: hover) {
+  .footer-btn:hover,
+  .footer-btn:active {
+    background-color: var(--hover-coral);
+    box-shadow: 0 0 20px var(--hover-coral);
+    transform: scale(1.1);
+  }
+
+  .footer-btn:focus {
+    background-color: var(--hover-coral);
+    box-shadow: 0 0 20px var(--hover-coral);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .footer-btn:active {
+    background-color: var(--hover-coral);
+    box-shadow: 0 0 20px var(--hover-coral);
+    transform: scale(1.1);
+  }
+
+  .footer-btn:focus {
+    background-color: var(--hover-coral);
+    box-shadow: 0 0 20px var(--hover-coral);
+  }
+}
+
+/* #endregion Form*/
+
+/* #region Contacts*/
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-contacts {
+    gap: 4px;
+  }
+}
+
+.footer-contacts-link {
+  padding: 18px 32px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  outline: none;
+  transition: border 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-contacts-link {
+    padding: 10px 12px;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+}
+
+@media (hover: hover) {
+  .footer-contacts-link:hover,
+  .footer-contacts-link:focus {
+    border: 1px solid var(--white);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .footer-contacts-link:active {
+    border: 1px solid var(--white);
+  }
+}
+
+/* #endregion Contacts*/
+
+/* #region Modal*/
+
+.modal {
+  position: relative;
+  padding: 64px;
+  border-radius: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  background-color: var(--black);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .modal {
+    padding: 64px 32px;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  cursor: pointer;
+}
+
+.modal h5 {
+  width: 364px;
+  color: var(--white);
+  line-height: 30px;
+  letter-spacing: -0.4px;
+}
+
+@media only screen and (max-width: 767px) {
+  .modal h5 {
+    width: 279px;
+  }
+}
+
+.modal p {
+  width: 364px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+
+@media only screen and (max-width: 767px) {
+  .modal p {
+    width: 279px;
+  }
+}
+
+/* #endregion Modal*/
+
+/* #endregion Footer*/

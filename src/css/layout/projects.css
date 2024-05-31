@@ -1,0 +1,157 @@
+#list-slider {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+#slider {
+  max-width: 1376px;
+}
+
+#item-slider {
+  display: flex;
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 1439px) {
+  #item-slider {
+    flex-direction: column;
+  }
+
+  #slider {
+    max-width: 704px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #list-slider {
+    margin-bottom: 32px;
+  }
+
+  #slider {
+    max-width: 343px;
+  }
+}
+
+.title-projects {
+  margin-bottom: 32px;
+}
+
+.white-block {
+  padding: 64px;
+
+  background-color: var(--white);
+  border-radius: 24px 0 0 24px;
+}
+
+@media only screen and (min-width: 1140px) {
+  .white-block {
+    max-width: 688px;
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  .white-block {
+    border-radius: 24px 24px 0 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .white-block {
+    padding: 32px;
+  }
+}
+
+.list-hashtag {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-bottom: 223px;
+}
+
+@media only screen and (max-width: 1439px) {
+  .list-hashtag {
+    margin-bottom: 164px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .list-hashtag {
+    margin-bottom: 96px;
+  }
+}
+
+.item-hashtag {
+  border-radius: 60px;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+
+  padding: 18px;
+}
+
+.text-hashtag {
+  color: var(--black);
+}
+
+.subtitle-projects {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1;
+  margin-bottom: 32px;
+  letter-spacing: -0.03em;
+}
+
+@media only screen and (max-width: 767px) {
+  .subtitle-projects {
+    font-size: 24px;
+    line-height: 1.16667;
+  }
+}
+
+.link-project {
+  background-color: var(--coral);
+  border-radius: 60px;
+  padding: 18px 50px;
+  display: inline-block;
+
+  transition: 250ms ease-in-out;
+  transition-property: background-color;
+}
+
+.link-project:focus {
+  background-color: var(--hover-coral);
+}
+
+@media screen and (hover: hover) {
+  .link-project:hover {
+    background-color: var(--hover-coral);
+  }
+}
+
+@media screen and not (hover: hover) {
+  .link-project:active {
+    background-color: var(--hover-coral);
+  }
+}
+
+.dark-block {
+  background-color: var(--dark-grey);
+  padding: 120px 37px;
+  border-radius: 0px 24px 24px 0px;
+}
+
+@media only screen and (max-width: 1439px) {
+  .dark-block {
+    background-color: var(--dark-grey);
+    padding: 120px 45px;
+    border-radius: 0px 0 24px 24px;
+  }
+}
+
+.container-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

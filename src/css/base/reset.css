@@ -24,6 +24,11 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  outline: none;
+}
+
+address {
+  font-style: normal;
 }
 
 button {
