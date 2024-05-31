@@ -1,5 +1,6 @@
 :root {
   --transparent-grey: #fafafa80;
+  --border-grey: #fafafa34;
 }
 
 .about-me p {
@@ -123,7 +124,7 @@
   background-color: inherit;
   border: none;
   margin: 0;
-  border-bottom: 1px solid var(--transparent-grey);
+  border-bottom: 1px solid var(--border-grey);
   padding-bottom: 32px;
 }
 
@@ -177,9 +178,11 @@ li.ac.about-me-item div.about-list-header-box {
   letter-spacing: -0.02em;
 }
 
-.about-list-header-box button.arrow-button {
+/* common accordion styles */
+
+button.arrow-button {
   background: transparent;
-  border: 1px solid var(--transparent-grey);
+  border: 1px solid var(--border-grey);
   border-radius: 100px;
   padding: 10px;
   display: flex;
@@ -198,6 +201,7 @@ li.ac.about-me-item div.about-list-header-box {
 
 .ac .ac-trigger::after {
   content: '' !important;
+  content: none !important;
 }
 
 /* #endregion LIST */

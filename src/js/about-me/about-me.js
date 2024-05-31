@@ -71,8 +71,6 @@ const containerOptions = {
 
 // ================================== RENDER ==================================
 
-onload = () => {
-  renderAboutSection(aboutMeArray);
-  const accordion = new Accordion('.accordion-container', containerOptions);
-  accordion.open(0);
-};
+renderAboutSection(aboutMeArray);
+const accordion = new Accordion('.accordion-container', containerOptions);
+accordion.open(0);
