@@ -3,10 +3,9 @@ import { renderSvg } from './render-icon';
 import { renderImg } from './render-card';
 import { UpdStatusArrow } from './status-arrow';
 
-import Swiper, { Navigation, Keyboard, EffectCreative } from 'swiper';
+import Swiper from 'swiper';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-creative';
+import { Navigation, Keyboard, EffectCreative } from 'swiper/modules';
 
 window.addEventListener('DOMContentLoaded', () => {
   renderImg(ref.projectSectionContainer);
