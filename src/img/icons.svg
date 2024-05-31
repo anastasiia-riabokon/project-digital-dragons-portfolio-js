@@ -42,5 +42,10 @@
     <symbol id="arrow" viewBox="0 0 32 32">
   <path stroke-width="3.2" d="m24 12-8 8-8-8" />
 </symbol>;
+    <svg id="icon-close-modal" width="24" height="24" fill="none">
+    <g stroke="#FAFAFA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M18 6 6 18M6 6l12 12"/>
+  </g>
+</svg>
   </defs>
 </svg>
