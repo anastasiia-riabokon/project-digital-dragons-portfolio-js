@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const arrowRight = ref.arrowContainer.querySelector('.btn-arrow-right');
   const arrowLeft = ref.arrowContainer.querySelector('.btn-arrow-left');
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('#slider', {
     modules: [Navigation, Keyboard, EffectCreative],
     direction: 'horizontal',
     slidesPerView: 1,
