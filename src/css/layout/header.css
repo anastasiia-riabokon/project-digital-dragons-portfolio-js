@@ -1,21 +1,124 @@
 .header {
-  padding: 20px 0;
+  padding-top: 32px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
-
-.nav-list {
+.header-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
 }
-
-.nav-link {
+.logo {
+  display: flex;
+  gap: 8px;
+}
+.logo-text {
+  color: var(--white);
+  font-family: 'Inter Tight';
+  font-size: 20px;
+  font-style: normal;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+@media only screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+.menu-btn {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  padding: 10px;
+}
+
+.menu-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.menu-list-item {
+  transition-property: color;
+}
+
+@media screen and (hover: hover) {
+  .menu-list-item:hover {
+    color: var(--coral);
+  }
+}
+
+.menu-list-item:focus {
+  color: var(--coral);
+}
+
+@media screen and not (hover: hover) {
+  .menu-list-item:active {
+    color: var(--coral);
+  }
+}
+
+.order-btn {
+  display: flex;
+  width: 163px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  background-color: var(--coral);
+  border: none;
+  transition-property: background-color;
+}
+
+@media only screen and (max-width: 767px) {
+  .order-btn {
+    display: none;
+  }
+}
+
+@media screen and (hover: hover) {
+  .order-btn:hover {
+    background-color: var(--hover-coral);
+  }
+}
+
+.order-btn:focus {
+  background-color: var(--hover-coral);
+}
+
+@media screen and not (hover: hover) {
+  .order-btn:active {
+    background-color: var(--hover-coral);
+  }
+}
+
+.menu-burger {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-burger {
+    display: none;
+  }
+}
+.menu-burger-icon {
+  stroke: var(--white);
 }
