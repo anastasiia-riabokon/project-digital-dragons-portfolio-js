@@ -16,6 +16,7 @@
   "author": "digital dragons <a.ryabokon20@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@esbuild/darwin-arm64": "^0.21.4",
     "accordion-js": "^3.3.4",
     "axios": "^1.7.2",
     "basiclightbox": "^5.0.4",
