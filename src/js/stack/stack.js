@@ -5,7 +5,40 @@ import { Navigation, Keyboard } from 'swiper/modules';
 const nextButton = document.querySelector('.js-arrow');
 const slidesList = document.querySelector('.js-stack-list');
 
-const swiper = new Swiper('.swiper', {
+const stackSlide = {
+  first: {
+    object() {
+      return slidesList.children[0];
+    },
+    index() {
+      return Number(slidesList.children[0].dataset.index);
+    },
+  },
+  active: {
+    object() {
+      return slidesList.querySelector('.slide-active');
+    },
+    index() {
+      return Number(slidesList.querySelector('.slide-active').dataset.index);
+    },
+  },
+  sibling: {
+    object() {
+      return slidesList.querySelector('.slide-active').nextElementSibling;
+    },
+    index() {
+      return Number(
+        slidesList.querySelector('.slide-active').nextElementSibling.dataset
+          .index
+      );
+    },
+  },
+
+  clickedIndex: 0,
+  activeIndex: 0,
+};
+
+const swiper = new Swiper('#stack', {
   modules: [Navigation, Keyboard],
   direction: 'horizontal',
   loop: true,
@@ -15,60 +48,102 @@ const swiper = new Swiper('.swiper', {
     onlyInViewport: true,
     pageUpDown: true,
   },
-  navigation: {
-    nextEl: '.js-arrow',
-  },
   breakpoints: {
     375: {
       slidesPerView: 2,
       spaceBetween: 5,
-      slidesPerGroup: 1,
+      slidesPerGroup: 2,
     },
     768: {
       slidesPerView: 3,
-      slidesPerGroup: 1,
+      slidesPerGroup: 3,
     },
     1440: {
       slidesPerView: 6,
-      slidesPerGroup: 1,
     },
   },
   on: {
     click() {
-      const clickedSlideIndex = this.clickedIndex;
-      console.log();
-      this.activeIndex = clickedSlideIndex;
-      if (clickedSlideIndex !== undefined) {
-        this.slides.forEach(slide =>
-          slide.classList.remove('swiper-slide-active')
-        );
-        this.slides[clickedSlideIndex].classList.add('swiper-slide-active');
+      stackSlide.clickedIndex = this.clickedIndex;
+
+      if (stackSlide.clickedIndex !== undefined) {
+        stackSlide.activeIndex = stackSlide.clickedIndex;
+        this.activeIndex = stackSlide.activeIndex;
+        this.slides.forEach(slide => slide.classList.remove('slide-active'));
+        this.slides[stackSlide.clickedIndex].classList.add('slide-active');
       }
     },
   },
 });
 
 nextButton.addEventListener('click', () => {
-  console.log(foo.dataset.id);
+  const deviceType = getDeviceType();
+
+  if (deviceType === 'mobile') {
+    mobileNextSlide();
+  }
+  if (deviceType === 'tablet') {
+    tabletNextSlide();
+  }
+  if (deviceType === 'desktop') {
+    desktopNextSlide();
+  }
 });
 
-slidesList.addEventListener('click', e => {
-  console.log(foo().dataset.id);
-});
+function mobileNextSlide() {
+  if (stackSlide.active.index() < 5) {
+    changeActiveSlide.activeToSibling();
+    if (stackSlide.activeIndex === 2 || stackSlide.activeIndex === 4) {
+      swiper.slideNext();
+    }
+  } else {
+    changeActiveSlide.activeToFirst();
+    swiper.slideNext();
+  }
+}
 
-const foo = () => {
-  return slidesList.querySelector('.swiper-slide-active');
+function tabletNextSlide() {
+  if (stackSlide.active.index() < 5) {
+    changeActiveSlide.activeToSibling();
+    if (stackSlide.activeIndex === 3) {
+      swiper.slideNext();
+    }
+  } else {
+    changeActiveSlide.activeToFirst();
+    swiper.slideNext();
+  }
+}
+
+function desktopNextSlide() {
+  if (stackSlide.sibling.object()) {
+    changeActiveSlide.activeToSibling();
+  } else {
+    changeActiveSlide.activeToFirst();
+  }
+}
+
+const changeActiveSlide = {
+  activeToSibling() {
+    stackSlide.sibling.object().classList.add('slide-active');
+    stackSlide.active.object().classList.remove('slide-active');
+    stackSlide.activeIndex += 1;
+  },
+  activeToFirst() {
+    stackSlide.active.object().classList.remove('slide-active');
+    stackSlide.first.object().classList.add('slide-active');
+    stackSlide.activeIndex = 0;
+  },
 };
 
 // ! Для зображень, виявлення ширини екрана
-// function getDeviceType() {
-//   const width = window.innerWidth;
+function getDeviceType() {
+  const width = window.innerWidth;
 
-//   if (width < 768) {
-//     return 'mobile'; // Смартфон
-//   } else if (width < 1024) {
-//     return 'tablet'; // Планшет
-//   } else {
-//     return 'desktop'; // Комп'ютер
-//   }
-// }
+  if (width < 768) {
+    return 'mobile';
+  } else if (width < 1440) {
+    return 'tablet';
+  } else {
+    return 'desktop';
+  }
+}
