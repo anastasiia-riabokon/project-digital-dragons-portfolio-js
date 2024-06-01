@@ -79,6 +79,7 @@
   height: 55px;
   justify-content: center;
   align-items: center;
+  line-height: normal;
   border-radius: 60px;
   background-color: var(--coral);
   border: none;

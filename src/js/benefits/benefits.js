@@ -1,6 +1,8 @@
 import { refs } from './refs';
 import { renderBenefits } from './render-benefits';
-import { btnClickForLink } from './no-hash-links';
+import { scrollPage } from '../common/scroll';
 
 window.addEventListener('DOMContentLoaded', renderBenefits);
-refs.btnEl.addEventListener('click', btnClickForLink);
+refs.btnEl.addEventListener('click', event =>
+  scrollPage(event, '.benefits-btn')
+);
