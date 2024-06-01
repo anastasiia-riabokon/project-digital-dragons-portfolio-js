@@ -1,7 +1,7 @@
 import { ref } from './reference';
 import { renderSvg } from './render-icon';
 import { renderImg } from './render-card';
-import { UpdStatusArrow } from './status-arrow';
+import { updStatusArrow } from '../common/status-arrow';
 
 import Swiper from 'swiper';
 import 'swiper/css';
@@ -42,8 +42,8 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  UpdStatusArrow(mySwiper, arrowLeft, arrowRight);
+  updStatusArrow(mySwiper, arrowLeft, arrowRight);
   mySwiper.on('reachBeginning slideChange reachEnd', () =>
-    UpdStatusArrow(mySwiper, arrowLeft, arrowRight)
+    updStatusArrow(mySwiper, arrowLeft, arrowRight)
   );
 });

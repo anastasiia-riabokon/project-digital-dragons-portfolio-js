@@ -1,4 +1,4 @@
-export function UpdStatusArrow(swiperInstance, prevBtn, nextBtn) {
+export function updStatusArrow(swiperInstance, prevBtn, nextBtn) {
   swiperInstance.isEnd
     ? nextBtn.classList.remove('active')
     : nextBtn.classList.add('active');
