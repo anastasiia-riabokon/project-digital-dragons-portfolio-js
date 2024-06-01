@@ -37,7 +37,7 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M4 11.333h24M4 20.667h24"/>
     </symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M24 8 8 24M8 8l16 16"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M24 8 8 24M8 8l16 16" stroke="#ffffff" />
     </symbol>
     <symbol id="arrow" viewBox="0 0 32 32">
   <path stroke-width="3.2" d="m24 12-8 8-8-8" />
