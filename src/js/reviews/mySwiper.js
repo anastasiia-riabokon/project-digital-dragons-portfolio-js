@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { refs } from './refs';
+import { updStatusArrow } from '../common/status-arrow';
 
 export function onMySwiper() {
   const swiper = new Swiper('.js-swiper__reviews', {
@@ -41,21 +42,8 @@ export function onMySwiper() {
     },
   });
 
-  updateButtons(swiper);
-  swiper.on('reachBeginning slideChange reachEnd', () => updateButtons(swiper));
-}
-
-function updateButtons(swiper) {
-  const { isBeginning, isEnd } = swiper;
-  if (isBeginning) {
-    refs.btnPrev.classList.remove('active');
-  } else {
-    refs.btnPrev.classList.add('active');
-  }
-
-  if (isEnd) {
-    refs.btnNext.classList.remove('active');
-  } else {
-    refs.btnNext.classList.add('active');
-  }
+  updStatusArrow(swiper, refs.btnPrev, refs.btnNext);
+  swiper.on('reachBeginning slideChange reachEnd', () =>
+    updStatusArrow(swiper, refs.btnPrev, refs.btnNext)
+  );
 }

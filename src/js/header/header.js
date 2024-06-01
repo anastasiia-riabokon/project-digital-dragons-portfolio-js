@@ -1,5 +1,8 @@
+import { scrollPage } from '../common/scroll';
+
 const menuBtn = document.querySelector('.menu-btn');
 const menuList = document.querySelector('.menu-list');
+const btnOrder = document.querySelector('.order-btn');
 
 let menuOpen = false;
 
@@ -21,22 +24,7 @@ menuList.style.pointerEvents = 'none';
 //=============================================
 
 menuBtn.addEventListener('click', toggleMenu);
-
-menuList.addEventListener('click', event => {
-  if (event.target.matches('.menu-list-link')) {
-    event.preventDefault();
-
-    const targetId = event.target.getAttribute('href');
-
-    const targetSection = document.querySelector(targetId);
-
-    if (targetSection) {
-      const targetOffset = targetSection.offsetTop;
-
-      window.scrollTo({
-        top: targetOffset,
-        behavior: 'smooth',
-      });
-    }
-  }
-});
+menuList.addEventListener('click', event =>
+  scrollPage(event, '.menu-list-link')
+);
+btnOrder.addEventListener('click', event => scrollPage(event, '.order-btn'));

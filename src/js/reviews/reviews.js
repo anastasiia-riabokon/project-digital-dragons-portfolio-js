@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', renderReviews);
 async function renderReviews() {
   try {
     const users = await fetchReviews();
-    console.log(users);
 
     if (users.length === 0) {
       showErrorMessage();
