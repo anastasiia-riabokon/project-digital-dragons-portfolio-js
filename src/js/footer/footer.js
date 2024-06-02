@@ -2,7 +2,7 @@ import axios from 'axios';
 import { sendRequest } from '../api';
 
 import * as basicLightbox from 'basiclightbox';
-import 'basicLightbox/src/styles/main.scss';
+import 'basicLightbox/dist/basicLightbox.css';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
