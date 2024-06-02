@@ -16,7 +16,7 @@ const modal = basicLightbox.create(
   `
     <div class="modal">
         <svg class="icon">
-          <use href="../../img/icons.svg#icon-close-modal"></use>
+          <use href="${iconSvg}#icon-close-modal"></use>
         </svg>
         <h5>Thank you for your interest in cooperation!</h5>
         <p>
