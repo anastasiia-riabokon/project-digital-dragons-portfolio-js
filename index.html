@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project-digital-dragons-portfolio-js/assets/fav-30b3351a.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <script type="module" crossorigin src="/project-digital-dragons-portfolio-js/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-digital-dragons-portfolio-js/assets/vendor-8e9b1286.js">
+    <link rel="stylesheet" href="/project-digital-dragons-portfolio-js/assets/vendor-97fefa93.css">
+    <link rel="stylesheet" href="/project-digital-dragons-portfolio-js/assets/index-a957c283.css">
+  </head>
+
+  <body>
+    <header class="header">
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="logo">
+                <a href="./index.html" class="logo-image-link">
+                    <img src="../img/header/image.png" alt="Lloyd Jefferson" class="logo-image" width="80" height="80">
+                </a>
+                <p class="logo-text">jefferson*</p>
+            </div>
+            <div class="menu">
+                <button class="menu-btn" aria-label="Menu button">
+                    Menu
+                </button>
+                <ul class="menu-list">
+                    <li class="menu-list-item">
+                        <a href="#about-me" class="menu-list-link">About me</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#benefits" class="menu-list-link">Benefits</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#projects" class="menu-list-link">Projects</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#faq" class="menu-list-link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="order-btn" aria-label="Order button" href="#lets-work-together">
+                Order the project
+            </a>
+            <button class="menu-burger" aria-label="Menu button">
+                <svg class="menu-burger-icon" id="burgerBtn" width="28" height="28">
+                    <use href="/project-digital-dragons-portfolio-js/assets/icons-d830d6cb.svg#burger"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <main>
+      <section class="hero section">
+    <div class="container">
+        <h1 class="hero-title">
+            Hello.<br>
+            I’m Fullstack developer
+            Lloyd Jefferson.
+        </h1>
+        <div class="hero-links">
+            <ul class="hero-socials">
+                <li class="socials-item">
+                    <a href="https://www.instagram.com/goitclub/  " class="socials-link" target="_blank">IG</a>
+                </li>
+                <li class="socials-item">
+                    <a href="https://www.facebook.com/goITclub/" class="socials-link" target="_blank">FB</a>
+                </li>
+                <li class="socials-item">
+                    <a href="https://www.youtube.com/c/GoIT  " class="socials-link" target="_blank">YT</a>
+                </li>
+                <li class="socials-item">
+                    <a href="https://github.com/anastasiia-riabokon/project-digital-dragons-portfolio-js"
+                        class="socials-link" target="_blank">GH</a>
+                </li>
+            </ul>
+            <address>
+                <a href="mailto:" class="hero-email">lloydjefferson@gmail.com</a>
+            </address>
+        </div>
+    </div>
+</section>
+      <section id="about-me" class="section about-me">
+  <div class="container">
+    <div class="about-me-caption">
+      <h2 class="visually-hidden">About Me</h2>
+      <div class="about-me-text">
+        <p>
+          I work with people all over the world to create impressive and
+          <span class="coral">functional</span>
+          <span class="grey-accent-text">websites</span> that reflect each
+          client's unique personality.
+        </p>
+      </div>
+      <div class="photo-box">
+        <picture class="profile-photo">
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-digital-dragons-portfolio-js/assets/about-mobile-f2da6313.jpg 1x, /project-digital-dragons-portfolio-js/assets/about-mobile@2x-60090227.jpg 2x"
+          />
+          <source
+            srcset="/project-digital-dragons-portfolio-js/assets/about-50442b65.jpg 1x, /project-digital-dragons-portfolio-js/assets/about@2x-3900029e.jpg 2x"
+          />
+          <img
+            srcset="/project-digital-dragons-portfolio-js/assets/about-50442b65.jpg 1x, /project-digital-dragons-portfolio-js/assets/about@2x-3900029e.jpg 2x"
+            alt="Photo of Lloyd Jefferson"
+          />
+        </picture>
+      </div>
+    </div>
+    <ul class="accordion-container about-me-list"></ul>
+  </div>
+</section>
+
+      <section id="stack-section" class="section">
+  <div class="container my-cont">
+    <div id="stack" class="swiper">
+      <ul id="stack-list" class="swiper-wrapper js-stack-list">
+        <li data-index="0" id="stack-item" class="swiper-slide">
+          <p class="stack-text">HTML/CSS</p>
+        </li>
+        <li data-index="1" id="stack-item" class="swiper-slide">
+          <p class="stack-text">JavaScript</p>
+        </li>
+        <li data-index="2" id="stack-item" class="swiper-slide">
+          <p class="stack-text">React</p>
+        </li>
+        <li data-index="3" id="stack-item" class="swiper-slide">
+          <p class="stack-text">Node.js</p>
+        </li>
+        <li data-index="4" id="stack-item" class="swiper-slide">
+          <p class="stack-text">React Native</p>
+        </li>
+        <li data-index="5" id="stack-item" class="swiper-slide">
+          <p class="stack-text">Soft skills</p>
+        </li>
+      </ul>
+    </div>
+    <button data-type="next" type="button" class="arrow-btn js-arrow">
+      <svg class="arrow-svg" width="40" height="40">
+        <use href="../img/icons.svg#stack-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+      <section class="section" id="benefits">
+  <div class="container wrapper-benefits">
+    <div class="box-left">
+      <h2 class="benefits-title">Benefits of working with me</h2>
+    </div>
+    <div class="box-right">
+      <ul class="benefits-list js-benefits-list"></ul>
+
+      <a href="#lets-work-together" class="benefits-btn">Order the project</a>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="projects">
+  <div class="container">
+    <h2 class="title-projects">Projects</h2>
+    <div class="swiper mySwiper" id="slider">
+      <ul
+        class="project-container projects-js swiper-wrapper"
+        id="list-slider"
+      ></ul>
+    </div>
+    <div class="container-arrow arrow-js"></div>
+  </div>
+</section>
+
+      <section id="faq" class="faq section">
+  <div class="container">
+    <h4 class="faq-header">FAQ</h4>
+    <ul class="faq-list accordion-container-faq"></ul>
+  </div>
+</section>
+
+      <section class="covers section">
+  <div class="container">
+    <div class="content">
+      <div class="marquee">
+        <div class="marquee__inner"></div>
+        <div class="marquee__inner_one"></div>
+        <div class="marquee__inner_two"></div>
+        <div class="marquee__inner_three"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="reviews" class="section">
+  <div class="container wrapper__reviews">
+    <h2 class="reviews__title">REVIEWS</h2>
+    <div class="swiper js-swiper__reviews">
+      <ul class="swiper-wrapper js-reviews__list"></ul>
+    </div>
+    <div class="btn__box">
+      <button class="btn__reviews btn-arrow-left btn-left-js">
+        <svg class="icon-arrow icon-arrow-left" width="68" height="68">
+          <use href="../img/icons.svg#arrow-left"></use>
+        </svg>
+      </button>
+
+      <button class="btn__reviews btn-arrow-right btn-right-js">
+        <svg class="icon-arrow icon-arrow-right" width="68" height="68">
+          <use href="../img/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="section" id="lets-work-together">
+  <div class="container">
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="../img/footer/background-photo/glass-effect767px.png"
+        width="85"
+        height="679"
+      />
+      <source
+        media="(max-width: 1439px)"
+        srcset="../img/footer/background-photo/glass-effect1439px.png"
+        width="197"
+        height="679"
+      />
+      <source
+        media="(min-width: 1440px)"
+        srcset="../img/footer/background-photo/glass-effect1440px.png"
+        width="400"
+        height="636"
+      />
+      <img
+        class="back-photo"
+        src="../img/footer/background-photo/glass-effect1440px.png"
+        alt="Background photo"
+        width="400"
+        height="636"
+      />
+    </picture>
+    <div class="footer-text">
+      <div class="footer-text-container">
+        <img
+          class="footer-text-img"
+          src="/project-digital-dragons-portfolio-js/assets/photo-man-310b339b.png"
+          alt="Photo of man"
+          width="44"
+          height="44"
+        />
+        <h2 class="footer-text-title">Let’s <span class="coral">work</span></h2>
+      </div>
+      <h2 class="footer-text-title">together</h2>
+    </div>
+
+    <form class="footer-form" action="/submit" method="post">
+      <div class="footer-form-container">
+        <input
+          class="footer-form-input footer-form-email"
+          id="email"
+          type="text"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          autocomplete="off"
+          required
+        />
+        <span class="form-span form-success-text">Success!</span>
+        <span class="form-span form-error-text">Invalid email, try again</span>
+      </div>
+      <div class="footer-form-container">
+        <input
+          class="footer-form-input"
+          id="comment"
+          type="text"
+          name="comment"
+          placeholder="comments"
+          autocomplete="off"
+          required
+        />
+      </div>
+
+      <button class="footer-btn" type="submit">Send</button>
+    </form>
+
+    <address class="footer-contacts">
+      <a class="footer-contacts-link" href="mailto:lloydjefferson@gmail.com"
+        >lloydjefferson@gmail.com</a
+      >
+      <a class="footer-contacts-link" href="tel:+3801111111111"
+        >+380 11 1111 11 11</a
+      >
+    </address>
+  </div>
+</footer>
+
+
+    <div class="modal-mob-menu">
+    <button class="modal-button" type="button">
+        <svg class="modal-close" width="28" height="28">
+            <use href="../img/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+    <ul class="mob-menu-list">
+        <li class="mob-list-item">
+            <a href="#about-me" class="mob-list-link">About me</a>
+        </li>
+        <li class="mob-list-item">
+            <a href="#benefits" class="mob-list-link">Benefits</a>
+        </li>
+        <li class="mob-list-item">
+            <a href="#projects" class="mob-list-link">Projects</a>
+        </li>
+        <li class="mob-list-item">
+            <a href="#faq" class="mob-list-link">FAQ</a>
+        </li>
+    </ul>
+    <a class="order-btn-mob" aria-label="Order button" href="#lets-work-together">
+        Order the project
+    </a>
+</div>
+
+    
+  </body>
+</html>
