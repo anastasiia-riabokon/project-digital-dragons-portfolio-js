@@ -1,6 +1,8 @@
+import imgProgect1 from '../../img/covers/projects/project1.png';
+console.log(imgProgect1);
 const imagesData = [
   {
-    src: './img/covers/projects/project1.png',
+    src: imgProgect1,
     srcset: './img/covers/projects/project1@2x.png 2x',
     alt: 'Project 1',
   },
