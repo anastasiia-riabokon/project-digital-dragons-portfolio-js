@@ -380,4 +380,7 @@
 
 /* #endregion Modal*/
 
+.basicLightbox {
+  z-index: 10000 !important;
+}
 /* #endregion Footer*/
