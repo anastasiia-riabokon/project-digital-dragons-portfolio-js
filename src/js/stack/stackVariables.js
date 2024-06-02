@@ -61,4 +61,28 @@ export const images = [
   },
 ];
 
-const skilsStack = [{}, {}, {}, {}, {}, {}];
+export const query = {
+  nextButton: document.querySelector('.js-arrow'),
+  slidesList: document.querySelector('.js-stack-list'),
+};
+
+export const stackSlide = {
+  first: {
+    object() {
+      return query.slidesList.children[0];
+    },
+  },
+  active: {
+    object() {
+      return query.slidesList.querySelector('.slide-active');
+    },
+  },
+  sibling: {
+    object() {
+      return query.slidesList.querySelector('.slide-active').nextElementSibling;
+    },
+  },
+
+  clickedIndex: 0,
+  activeIndex: 0,
+};

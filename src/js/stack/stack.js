@@ -1,42 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import { Navigation, Keyboard } from 'swiper/modules';
-
-const nextButton = document.querySelector('.js-arrow');
-const slidesList = document.querySelector('.js-stack-list');
-
-const stackSlide = {
-  first: {
-    object() {
-      return slidesList.children[0];
-    },
-    index() {
-      return Number(slidesList.children[0].dataset.index);
-    },
-  },
-  active: {
-    object() {
-      return slidesList.querySelector('.slide-active');
-    },
-    index() {
-      return Number(slidesList.querySelector('.slide-active').dataset.index);
-    },
-  },
-  sibling: {
-    object() {
-      return slidesList.querySelector('.slide-active').nextElementSibling;
-    },
-    index() {
-      return Number(
-        slidesList.querySelector('.slide-active').nextElementSibling.dataset
-          .index
-      );
-    },
-  },
-
-  clickedIndex: 0,
-  activeIndex: 0,
-};
+import { stackSlide, query } from './stackVariables';
 
 const swiper = new Swiper('#stack', {
   modules: [Navigation, Keyboard],
@@ -63,20 +28,23 @@ const swiper = new Swiper('#stack', {
     },
   },
   on: {
+    init() {
+      stackSlide.first.object().classList.add('slide-active');
+    },
     click() {
       stackSlide.clickedIndex = this.clickedIndex;
 
       if (stackSlide.clickedIndex !== undefined) {
         stackSlide.activeIndex = stackSlide.clickedIndex;
         this.activeIndex = stackSlide.activeIndex;
-        this.slides.forEach(slide => slide.classList.remove('slide-active'));
+        stackSlide.active.object().classList.remove('slide-active');
         this.slides[stackSlide.clickedIndex].classList.add('slide-active');
       }
     },
   },
 });
 
-nextButton.addEventListener('click', () => {
+query.nextButton.addEventListener('click', () => {
   const deviceType = getDeviceType();
 
   if (deviceType === 'mobile') {
@@ -91,7 +59,7 @@ nextButton.addEventListener('click', () => {
 });
 
 function mobileNextSlide() {
-  if (stackSlide.active.index() < 5) {
+  if (stackSlide.activeIndex < 5 && stackSlide.sibling.object()) {
     changeActiveSlide.activeToSibling();
     if (stackSlide.activeIndex === 2 || stackSlide.activeIndex === 4) {
       swiper.slideNext();
@@ -103,7 +71,7 @@ function mobileNextSlide() {
 }
 
 function tabletNextSlide() {
-  if (stackSlide.active.index() < 5) {
+  if (stackSlide.activeIndex < 5 && stackSlide.sibling.object()) {
     changeActiveSlide.activeToSibling();
     if (stackSlide.activeIndex === 3) {
       swiper.slideNext();
