@@ -35,6 +35,12 @@
   }
 }
 
+@media only screen and (max-width: 374px) {
+  picture img {
+    width: 44;
+  }
+}
+
 /* #endregion F-section, back-photo*/
 
 /* #region Text */
