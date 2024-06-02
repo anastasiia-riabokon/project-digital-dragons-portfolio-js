@@ -40,16 +40,31 @@
         <button class="menu-btn" aria-label="Menu button">Menu</button>
         <ul class="menu-list">
           <li class="menu-list-item">
-            <a href="#about-me" class="menu-list-link">About me</a>
+            <a
+              href="#about-me"
+              class="menu-list-link"
+              aria-label="go to about me"
+              >About me</a
+            >
           </li>
           <li class="menu-list-item">
-            <a href="#benefits" class="menu-list-link">Benefits</a>
+            <a
+              href="#benefits"
+              class="menu-list-link"
+              aria-label="go to benefits"
+              >Benefits</a
+            >
           </li>
           <li class="menu-list-item">
-            <a href="#projects" class="menu-list-link">Projects</a>
+            <a
+              href="#projects"
+              class="menu-list-link"
+              aria-label="go to the ptojects"
+              >Projects</a
+            >
           </li>
           <li class="menu-list-item">
-            <a href="#faq" class="menu-list-link">FAQ</a>
+            <a href="#faq" class="menu-list-link" aria-label="go to faq">FAQ</a>
           </li>
         </ul>
       </div>
@@ -68,34 +83,59 @@
 
     <main>
       <section class="hero section">
-    <div class="container">
-        <h1 class="hero-title">
-            Hello.<br>
-            I’m Fullstack developer
-            Lloyd Jefferson.
-        </h1>
-        <div class="hero-links">
-            <ul class="hero-socials">
-                <li class="socials-item">
-                    <a href="https://www.instagram.com/goitclub/  " class="socials-link" target="_blank">IG</a>
-                </li>
-                <li class="socials-item">
-                    <a href="https://www.facebook.com/goITclub/" class="socials-link" target="_blank">FB</a>
-                </li>
-                <li class="socials-item">
-                    <a href="https://www.youtube.com/c/GoIT  " class="socials-link" target="_blank">YT</a>
-                </li>
-                <li class="socials-item">
-                    <a href="https://github.com/anastasiia-riabokon/project-digital-dragons-portfolio-js"
-                        class="socials-link" target="_blank">GH</a>
-                </li>
-            </ul>
-            <address>
-                <a href="mailto:" class="hero-email">lloydjefferson@gmail.com</a>
-            </address>
-        </div>
+  <div class="container">
+    <h1 class="hero-title">
+      Hello.<br />
+      I’m Fullstack developer Lloyd Jefferson.
+    </h1>
+    <div class="hero-links">
+      <ul class="hero-socials">
+        <li class="socials-item">
+          <a
+            href="https://www.instagram.com/goitclub/  "
+            class="socials-link"
+            target="_blank"
+            aria-label="person page instagram"
+            >IG</a
+          >
+        </li>
+        <li class="socials-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="socials-link"
+            target="_blank"
+            aria-label="person page facebook"
+            >FB</a
+          >
+        </li>
+        <li class="socials-item">
+          <a
+            href="https://www.youtube.com/c/GoIT  "
+            class="socials-link"
+            target="_blank"
+            aria-label="person page youtube"
+            >YT</a
+          >
+        </li>
+        <li class="socials-item">
+          <a
+            href="https://github.com/anastasiia-riabokon/project-digital-dragons-portfolio-js"
+            class="socials-link"
+            target="_blank"
+            aria-label="person page project"
+            >GH</a
+          >
+        </li>
+      </ul>
+      <address>
+        <a href="mailto:" class="hero-email" aria-label="person email"
+          >lloydjefferson@gmail.com</a
+        >
+      </address>
     </div>
+  </div>
 </section>
+
       <section id="about-me" class="section about-me">
   <div class="container">
     <div class="about-me-caption">
@@ -152,7 +192,12 @@
         </li>
       </ul>
     </div>
-    <button data-type="next" type="button" class="arrow-btn js-arrow">
+    <button
+      data-type="next"
+      type="button"
+      class="arrow-btn js-arrow"
+      aria-label="arrow for change active element"
+    >
       <svg class="arrow-svg" width="40" height="40">
         <use href="/project-digital-dragons-portfolio-js/assets/icons-d830d6cb.svg#stack-arrow"></use>
       </svg>
@@ -168,7 +213,12 @@
     <div class="box-right">
       <ul class="benefits-list js-benefits-list"></ul>
 
-      <a href="#lets-work-together" class="benefits-btn">Order the project</a>
+      <a
+        href="#lets-work-together"
+        class="benefits-btn"
+        aria-label="scroll to order the project"
+        >Order the project</a
+      >
     </div>
   </div>
 </section>
@@ -213,13 +263,19 @@
       <ul class="swiper-wrapper js-reviews__list"></ul>
     </div>
     <div class="btn__box">
-      <button class="btn__reviews btn-arrow-left btn-left-js">
+      <button
+        class="btn__reviews btn-arrow-left btn-left-js"
+        aria-label="arrow for change slide"
+      >
         <svg class="icon-arrow icon-arrow-left" width="68" height="68">
           <use href="/project-digital-dragons-portfolio-js/assets/icons-d830d6cb.svg#arrow-left"></use>
         </svg>
       </button>
 
-      <button class="btn__reviews btn-arrow-right btn-right-js">
+      <button
+        class="btn__reviews btn-arrow-right btn-right-js"
+        aria-label="arrow for change slide"
+      >
         <svg class="icon-arrow icon-arrow-right" width="68" height="68">
           <use href="/project-digital-dragons-portfolio-js/assets/icons-d830d6cb.svg#arrow-right"></use>
         </svg>
@@ -300,7 +356,9 @@
         />
       </div>
 
-      <button class="footer-btn" type="submit">Send</button>
+      <button class="footer-btn" type="submit" aria-label="submit data">
+        Send
+      </button>
     </form>
 
     <address class="footer-contacts">
@@ -316,23 +374,29 @@
 
 
     <div class="modal-mob-menu">
-  <button class="modal-button" type="button">
+  <button class="modal-button" type="button" aria-label="close menu">
     <svg class="modal-close" width="28" height="28">
       <use href="/project-digital-dragons-portfolio-js/assets/icons-d830d6cb.svg#icon-close"></use>
     </svg>
   </button>
   <ul class="mob-menu-list">
     <li class="mob-list-item">
-      <a href="#about-me" class="mob-list-link">About me</a>
+      <a href="#about-me" class="mob-list-link" aria-label="go to About me"
+        >About me</a
+      >
     </li>
     <li class="mob-list-item">
-      <a href="#benefits" class="mob-list-link">Benefits</a>
+      <a href="#benefits" class="mob-list-link" aria-label="go to Benefits"
+        >Benefits</a
+      >
     </li>
     <li class="mob-list-item">
-      <a href="#projects" class="mob-list-link">Projects</a>
+      <a href="#projects" class="mob-list-link" aria-label="go to Projects"
+        >Projects</a
+      >
     </li>
     <li class="mob-list-item">
-      <a href="#faq" class="mob-list-link">FAQ</a>
+      <a href="#faq" class="mob-list-link" aria-label="go to FAQ">FAQ</a>
     </li>
   </ul>
   <a class="order-btn-mob" aria-label="Order button" href="#lets-work-together">
