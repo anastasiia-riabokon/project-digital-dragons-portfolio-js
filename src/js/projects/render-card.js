@@ -1,4 +1,3 @@
-import 'lazysizes';
 import { projects } from './data';
 
 function cardTemplate(project) {

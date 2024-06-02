@@ -11,3 +11,4 @@ import './js/cover/cover.js';
 import './js/reviews/reviews.js';
 import './js/footer/footer.js';
 import './js/common/scrolling-page/common-scrolling-page.js';
+import 'lazysizes';

@@ -184,7 +184,13 @@
 
 @media only screen and (max-width: 767px) {
   .footer-form-input {
-    width: 100%;
+    width: 343px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .footer-form-input {
+    width: 288px;
   }
 }
 
