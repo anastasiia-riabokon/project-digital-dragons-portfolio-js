@@ -112,14 +112,20 @@
       <div class="photo-box">
         <picture class="profile-photo">
           <source
+            class="lazyload"
             media="(max-width: 767px)"
-            srcset="/project-digital-dragons-portfolio-js/assets/about-mobile-f2da6313.jpg 1x, /project-digital-dragons-portfolio-js/assets/about-mobile@2x-60090227.jpg 2x"
+            data-srcset="
+              ./img/about/about-mobile.jpg    1x,
+              ./img/about/about-mobile@2x.jpg 2x
+            "
           />
           <source
-            srcset="/project-digital-dragons-portfolio-js/assets/about-50442b65.jpg 1x, /project-digital-dragons-portfolio-js/assets/about@2x-3900029e.jpg 2x"
+            class="lazyload"
+            data-srcset="./img/about/about.jpg 1x, ./img/about/about@2x.jpg 2x"
           />
           <img
-            srcset="/project-digital-dragons-portfolio-js/assets/about-50442b65.jpg 1x, /project-digital-dragons-portfolio-js/assets/about@2x-3900029e.jpg 2x"
+            class="lazyload"
+            data-srcset="./img/about/about.jpg 1x, ./img/about/about@2x.jpg 2x"
             alt="Photo of Lloyd Jefferson"
           />
         </picture>
