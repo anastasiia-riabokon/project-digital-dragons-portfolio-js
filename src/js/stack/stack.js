@@ -1,5 +1,5 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from 'swiper';
+import 'swiper/css';
 import { Navigation, Keyboard } from 'swiper/modules';
 import { stackSlide, query } from './stackVariables';
 
@@ -33,7 +33,6 @@ const swiper = new Swiper('#stack', {
     },
     click() {
       stackSlide.clickedIndex = this.clickedIndex;
-
       if (stackSlide.clickedIndex !== undefined) {
         stackSlide.activeIndex = stackSlide.clickedIndex;
         this.activeIndex = stackSlide.activeIndex;

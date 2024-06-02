@@ -1,3 +1,7 @@
+#stack-section {
+  padding-top: 0;
+}
+
 .my-cont {
   display: flex;
   flex-direction: row;

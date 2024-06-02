@@ -15,7 +15,7 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 302px;
   padding-bottom: 64px;
-  z-index: 3;
+  z-index: 99999;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.7s ease;
@@ -24,6 +24,10 @@
 .modal-mob-menu.is-open {
   opacity: 1;
   pointer-events: all;
+}
+
+body:has(.modal-mob-menu.is-open) {
+  overflow: hidden;
 }
 
 .modal-button {

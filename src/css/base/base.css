@@ -84,6 +84,7 @@ p {
   overflow: hidden;
 }
 
+/* #region  arrows for benefits and projects*/
 .icon-arrow {
   fill: none;
 }
@@ -105,3 +106,39 @@ p {
 button:disabled {
   cursor: not-allowed;
 }
+/* #endregion  */
+
+/* #region  common scroll*/
+.scroll-arrow-down {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 250ms ease-in-out;
+}
+
+.icon-arrow-down {
+  stroke: var(--transparent-grey);
+  fill: #21212198;
+  transition: stroke 250ms ease-in-out;
+}
+
+@media screen and (hover: hover) {
+  .icon-arrow-down:hover {
+    stroke: var(--white);
+  }
+}
+
+@media screen and not (hover: hover) {
+  .icon-arrow-down:active {
+    stroke: var(--white);
+  }
+}
+
+.up {
+  transform: rotate(180deg);
+}
+/* #endregion  */
