@@ -1,4 +1,5 @@
 import { projects } from './data';
+import 'lazysizes';
 
 function cardTemplate(project) {
   const hashtagList = project.hashtags
