@@ -36,7 +36,7 @@ function renderAboutSection(array) {
   aboutSectionParentEl.innerHTML = createAboutMarkup(array);
 }
 
-const arrowMarkup = `<button class="arrow-button"><svg class="arrow-icon js-down" width="20" height="20"><use href="${iconSvg}#arrow"></use></svg></button>`;
+const arrowMarkup = `<button class="arrow-button" aria-label="arrow for open or close text"><svg class="arrow-icon js-down" width="20" height="20"><use href="${iconSvg}#arrow"></use></svg></button>`;
 
 function createAboutParagraph({ content }) {
   const text = content.join('</p><p>');

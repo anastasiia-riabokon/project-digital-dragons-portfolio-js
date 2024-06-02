@@ -23,7 +23,7 @@ export const body = document.body;
 
 function iconArrowTemplate({ iconName, svgHeight, svgWidth }) {
   return `
-  <button class="scroll-${iconName}" id="${iconName}">
+  <button class="scroll-${iconName}" id="${iconName}" aria-label="arrow for scroll on page (up/down)">
 <svg class="icon-arrow icon-${iconName}" width="${svgWidth}" height="${svgHeight}">
   <use href="${iconsSvg}#${iconName}"></use>
 </svg>
