@@ -1,5 +1,6 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+import iconSvg from '../../img/icons.svg';
 
 const aboutMeArray = [
   {
@@ -35,8 +36,7 @@ function renderAboutSection(array) {
   aboutSectionParentEl.innerHTML = createAboutMarkup(array);
 }
 
-const arrowMarkup =
-  '<button class="arrow-button"><svg class="arrow-icon js-down" width="20" height="20"><use href="./img/icons.svg#arrow"></use></svg></button>';
+const arrowMarkup = `<button class="arrow-button"><svg class="arrow-icon js-down" width="20" height="20"><use href="${iconSvg}#arrow"></use></svg></button>`;
 
 function createAboutParagraph({ content }) {
   const text = content.join('</p><p>');
