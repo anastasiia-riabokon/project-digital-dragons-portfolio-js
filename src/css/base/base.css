@@ -49,7 +49,7 @@ p {
 
 /* accent for text */
 .coral {
-  color: var(--coral);
+  color: var(--accent-color);
 }
 
 .section {
