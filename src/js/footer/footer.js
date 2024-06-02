@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { sendRequest } from '../api';
+import iconSvg from '../../img/icons.svg';
 
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
