@@ -30,7 +30,7 @@ export function onMySwiper() {
     },
 
     breakpoints: {
-      375: {
+      320: {
         slidesPerView: 1,
       },
       768: {
