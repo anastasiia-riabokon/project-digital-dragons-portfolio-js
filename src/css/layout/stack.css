@@ -52,7 +52,7 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 50%;
 
-  transition: background-color 250ms ease-out;
+  transition: background-color 300ms ease-out;
 }
 
 @media only screen and (min-width: 768px) {

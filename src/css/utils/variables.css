@@ -65,14 +65,14 @@
 .tomato-theme {
   --accent-color: var(--tomato-theme);
   --hover-accent-color: var(--hover-tomato-theme);
-  --lowResDesk: url('../../img/hero/Hero-orange.png');
-  --highResDesk: url('../../img/hero/Hero@2x-orange.png');
-  --lowResTab: url('../../img/hero/orange-tab.png');
-  --highResTab: url('../../img/hero/orange-tab@2x.png');
-  --lowResMob: url('../../img/hero/orange-mob.png');
-  --highResMob: url('../../img/hero/orange-mob@2x.png');
-  --lowResMobMenu: url('../../img/hero/orange-mob-menu.png');
-  --highResMobMenu: url('../../img/hero/orange-mob-menu@2x.png');
+  --lowResDesk: url('../../img/hero/Hero-hot-orange.png');
+  --highResDesk: url('../../img/hero/Hero@2x_hot-orange.png');
+  --lowResTab: url('../../img/hero/hot-orange-tab.png');
+  --highResTab: url('../../img/hero/hot-orange-tab@2x.png');
+  --lowResMob: url('../../img/hero/hot-orange-mob.png');
+  --highResMob: url('../../img/hero/hot-orange-mob@2x.png');
+  --lowResMobMenu: url('../../img/hero/hot-orange-mob-menu.png');
+  --highResMobMenu: url('../../img/hero/hot-orange-mob-menu@2x.png');
 }
 
 .dark-green-theme {
@@ -81,7 +81,7 @@
   --lowResDesk: url('../../img/hero/Hero-green.png');
   --highResDesk: url('../../img/hero/Hero@2x-green.png');
   --lowResTab: url('../../img/hero/green-tab.png');
-  --highResTab: url('../../img/hero/green-tab@2x.png');
+  --highResTab: url('../../img/hero/green-tab-@2x.png');
   --lowResMob: url('../../img/hero/green-mob.png');
   --highResMob: url('../../img/hero/green-mob@2x.png');
   --lowResMobMenu: url('../../img/hero/green-mob-menu.png');
@@ -91,12 +91,12 @@
 .orange-theme {
   --accent-color: var(--orange-theme);
   --hover-accent-color: var(--hover-orange-theme);
-  --lowResDesk: url('../../img/hero/Hero-hot-orange.png');
-  --highResDesk: url('../../img/hero/Hero@2x_hot-orange.png');
-  --lowResTab: url('../../img/hero/hot-orange-tab.png');
-  --highResTab: url('../../img/hero/hot-orange-tab@2x.png');
-  --lowResMob: url('../../img/hero/hot-orange-mob.png');
-  --highResMob: url('../../img/hero/hot-orange-mob@2x.png');
-  --lowResMobMenu: url('../../img/hero/hot-orange-mob-menu.png');
-  --highResMobMenu: url('../../img/hero/hot-orange-mob-menu@2x.png');
+  --lowResDesk: url('../../img/hero/Hero-orange.png');
+  --highResDesk: url('../../img/hero/Hero@2x-orange.png');
+  --lowResTab: url('../../img/hero/orange-tab.png');
+  --highResTab: url('../../img/hero/orange-tab@2x.png');
+  --lowResMob: url('../../img/hero/orange-mob.png');
+  --highResMob: url('../../img/hero/orange-mob@2x.png');
+  --lowResMobMenu: url('../../img/hero/orange-mob-menu.png');
+  --highResMobMenu: url('../../img/hero/orange-mob-menu@2x.png');
 }

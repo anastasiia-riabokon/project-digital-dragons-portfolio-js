@@ -26,10 +26,10 @@ export const stackSlide = {
 };
 
 export const themeColorClass = [
-  'coral-theme',
+  'dark-green-theme',
   'light-green-theme',
   'blue-theme',
   'tomato-theme',
-  'dark-green-theme',
+  'coral-theme',
   'orange-theme',
 ];
