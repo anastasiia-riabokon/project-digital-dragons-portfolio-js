@@ -15,7 +15,7 @@
 .back-photo {
   position: absolute;
   top: -124px;
-  left: 880px;
+  left: 1040px;
   z-index: -100000;
   pointer-events: none;
   opacity: 0.4;
