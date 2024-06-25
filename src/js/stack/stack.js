@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation, Keyboard } from 'swiper/modules';
-import { stackSlide, query } from './stackVariables';
+import { stackSlide, query, themeColorClass } from './stackVariables';
 
 const swiper = new Swiper('#stack', {
   modules: [Navigation, Keyboard],
@@ -31,15 +31,6 @@ const swiper = new Swiper('#stack', {
     init() {
       stackSlide.first.object().classList.add('slide-active');
     },
-    click() {
-      stackSlide.clickedIndex = this.clickedIndex;
-      if (stackSlide.clickedIndex !== undefined) {
-        stackSlide.activeIndex = stackSlide.clickedIndex;
-        this.activeIndex = stackSlide.activeIndex;
-        stackSlide.active.object().classList.remove('slide-active');
-        this.slides[stackSlide.clickedIndex].classList.add('slide-active');
-      }
-    },
   },
 });
 
@@ -57,8 +48,20 @@ query.nextButton.addEventListener('click', () => {
   }
 });
 
+query.slidesList.addEventListener('click', e => {
+  if (e.target.nodeName !== 'LI') return;
+
+  const prevIndex = stackSlide.active.object().dataset.index;
+  const newIndex = e.target.dataset.index;
+  changeThemeColor(prevIndex, newIndex);
+
+  stackSlide.active.object().classList.remove('slide-active');
+  e.target.classList.add('slide-active');
+  stackSlide.activeIndex = e.target.dataset.index;
+});
+
 function mobileNextSlide() {
-  if (stackSlide.activeIndex < 5 && stackSlide.sibling.object()) {
+  if (stackSlide.activeIndex <= 5 && stackSlide.sibling.object()) {
     changeActiveSlide.activeToSibling();
     if (stackSlide.activeIndex === 2 || stackSlide.activeIndex === 4) {
       swiper.slideNext();
@@ -70,7 +73,7 @@ function mobileNextSlide() {
 }
 
 function tabletNextSlide() {
-  if (stackSlide.activeIndex < 5 && stackSlide.sibling.object()) {
+  if (stackSlide.activeIndex <= 5 && stackSlide.sibling.object()) {
     changeActiveSlide.activeToSibling();
     if (stackSlide.activeIndex === 3) {
       swiper.slideNext();
@@ -91,18 +94,30 @@ function desktopNextSlide() {
 
 const changeActiveSlide = {
   activeToSibling() {
+    const prevIndex = stackSlide.active.object().dataset.index;
+    const newIndex = stackSlide.sibling.object().dataset.index;
+    changeThemeColor(prevIndex, newIndex);
+
     stackSlide.sibling.object().classList.add('slide-active');
     stackSlide.active.object().classList.remove('slide-active');
     stackSlide.activeIndex += 1;
   },
   activeToFirst() {
+    const prevIndex = stackSlide.active.object().dataset.index;
+    const newIndex = stackSlide.first.object().dataset.index;
+    changeThemeColor(prevIndex, newIndex);
+
     stackSlide.active.object().classList.remove('slide-active');
     stackSlide.first.object().classList.add('slide-active');
     stackSlide.activeIndex = 0;
   },
 };
 
-// ! Для зображень, виявлення ширини екрана
+function changeThemeColor(prevIndex, newIndex) {
+  query.body.classList.remove(themeColorClass[prevIndex]);
+  query.body.classList.add(themeColorClass[newIndex]);
+}
+
 function getDeviceType() {
   const width = window.innerWidth;
 

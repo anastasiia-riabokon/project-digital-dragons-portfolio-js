@@ -62,8 +62,12 @@
   }
 }
 
+.stack-text {
+  color: var(--white);
+}
+
 .slide-active {
-  background-color: var(--coral);
+  background-color: var(--accent-color);
 }
 
 .arrow-btn {

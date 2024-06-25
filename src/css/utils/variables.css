@@ -22,3 +22,81 @@
   --orange-theme: #ff7f08; /*for orange theme*/
   --hover-orange-theme: #e47208; /*hover for orange theme*/
 }
+
+.coral-theme {
+  --accent-color: var(--coral);
+  --hover-accent-color: var(--hover-coral);
+  --lowResDesk: url('../../img/hero/Hero_red.png');
+  --highResDesk: url('../../img/hero/Hero@2x_red.png');
+  --lowResTab: url('../../img/hero/red-tab.png');
+  --highResTab: url('../../img/hero/red-tab@2x.png');
+  --lowResMob: url('../../img/hero/red-mob.png');
+  --highResMob: url('../../img/hero/red-mob@2x.png');
+  --lowResMobMenu: url('../../img/hero/red-mob-menu.png');
+  --highResMobMenu: url('../../img/hero/red-mob-menu@2x.png');
+}
+
+.light-green-theme {
+  --accent-color: var(--light-green-theme);
+  --hover-accent-color: var(--hover-light-green-theme);
+  --lowResDesk: url('../../img/hero/Hero-neo-green.png');
+  --highResDesk: url('../../img/hero/Hero@2x-neo-green.png');
+  --lowResTab: url('../../img/hero/neo-green-tab.png');
+  --highResTab: url('../../img/hero/neo-green-tab@2x.png');
+  --lowResMob: url('../../img/hero/neo-green-mob.png');
+  --highResMob: url('../../img/hero/neo-green-mob@2x.png');
+  --lowResMobMenu: url('../../img/hero/neo-green-mob-menu.png');
+  --highResMobMenu: url('../../img/hero/neo-green-mob-menu@2x.png');
+}
+
+.blue-theme {
+  --accent-color: var(--blue-theme);
+  --hover-accent-color: var(--hover-blue-theme);
+  --lowResDesk: url('../../img/hero/Hero-blue.png');
+  --highResDesk: url('../../img/hero/Hero@2x_blue.png');
+  --lowResTab: url('../../img/hero/blue-tab.png');
+  --highResTab: url('../../img/hero/blue-tab@2x.png');
+  --lowResMob: url('../../img/hero/blue-mob.png');
+  --highResMob: url('../../img/hero/blue-mob@2x.png');
+  --lowResMobMenu: url('../../img/hero/blue-mob-menu.png');
+  --highResMobMenu: url('../../img/hero/blue-mob-menu@2x.png');
+}
+
+.tomato-theme {
+  --accent-color: var(--tomato-theme);
+  --hover-accent-color: var(--hover-tomato-theme);
+  --lowResDesk: url('../../img/hero/Hero-hot-orange.png');
+  --highResDesk: url('../../img/hero/Hero@2x_hot-orange.png');
+  --lowResTab: url('../../img/hero/hot-orange-tab.png');
+  --highResTab: url('../../img/hero/hot-orange-tab@2x.png');
+  --lowResMob: url('../../img/hero/hot-orange-mob.png');
+  --highResMob: url('../../img/hero/hot-orange-mob@2x.png');
+  --lowResMobMenu: url('../../img/hero/hot-orange-mob-menu.png');
+  --highResMobMenu: url('../../img/hero/hot-orange-mob-menu@2x.png');
+}
+
+.dark-green-theme {
+  --accent-color: var(--dark-green-theme);
+  --hover-accent-color: var(--hover-dark-green-theme);
+  --lowResDesk: url('../../img/hero/Hero-green.png');
+  --highResDesk: url('../../img/hero/Hero@2x-green.png');
+  --lowResTab: url('../../img/hero/green-tab.png');
+  --highResTab: url('../../img/hero/green-tab-@2x.png');
+  --lowResMob: url('../../img/hero/green-mob.png');
+  --highResMob: url('../../img/hero/green-mob@2x.png');
+  --lowResMobMenu: url('../../img/hero/green-mob-menu.png');
+  --highResMobMenu: url('../../img/hero/green-mob-menu@2x.png');
+}
+
+.orange-theme {
+  --accent-color: var(--orange-theme);
+  --hover-accent-color: var(--hover-orange-theme);
+  --lowResDesk: url('../../img/hero/Hero-orange.png');
+  --highResDesk: url('../../img/hero/Hero@2x-orange.png');
+  --lowResTab: url('../../img/hero/orange-tab.png');
+  --highResTab: url('../../img/hero/orange-tab@2x.png');
+  --lowResMob: url('../../img/hero/orange-mob.png');
+  --highResMob: url('../../img/hero/orange-mob@2x.png');
+  --lowResMobMenu: url('../../img/hero/orange-mob-menu.png');
+  --highResMobMenu: url('../../img/hero/orange-mob-menu@2x.png');
+}

@@ -34,6 +34,9 @@
   width: 48px;
   height: 48px;
   margin-bottom: 64px;
+
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
 }
 
 .benefits-item-title {

@@ -110,7 +110,7 @@
 }
 
 .link-project {
-  background-color: var(--coral);
+  background-color: var(--accent-color);
   border-radius: 60px;
   padding: 18px 50px;
   display: inline-block;
@@ -120,18 +120,18 @@
 }
 
 .link-project:focus {
-  background-color: var(--hover-coral);
+  background-color: var(--hover-accent-color);
 }
 
 @media screen and (hover: hover) {
   .link-project:hover {
-    background-color: var(--hover-coral);
+    background-color: var(--hover-accent-color);
   }
 }
 
 @media screen and not (hover: hover) {
   .link-project:active {
-    background-color: var(--hover-coral);
+    background-color: var(--hover-accent-color);
   }
 }
 

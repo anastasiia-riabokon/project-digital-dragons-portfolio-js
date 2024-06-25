@@ -221,7 +221,7 @@
   border-radius: 50%;
   border: none;
   outline: inherit;
-  background-color: var(--coral);
+  background-color: var(--accent-color);
 
   color: #fafafa;
   font-weight: 500;
@@ -251,27 +251,27 @@
 @media (hover: hover) {
   .footer-btn:hover,
   .footer-btn:active {
-    background-color: var(--hover-coral);
-    box-shadow: 0 0 20px var(--hover-coral);
+    background-color: var(--hover-accent-color);
+    box-shadow: 0 0 20px var(--hover-accent-color);
     transform: scale(1.1);
   }
 
   .footer-btn:focus {
-    background-color: var(--hover-coral);
-    box-shadow: 0 0 20px var(--hover-coral);
+    background-color: var(--hover-accent-color);
+    box-shadow: 0 0 20px var(--hover-accent-color);
   }
 }
 
 @media (hover: none) and (pointer: coarse) {
   .footer-btn:active {
-    background-color: var(--hover-coral);
-    box-shadow: 0 0 20px var(--hover-coral);
+    background-color: var(--hover-accent-color);
+    box-shadow: 0 0 20px var(--hover-accent-color);
     transform: scale(1.1);
   }
 
   .footer-btn:focus {
-    background-color: var(--hover-coral);
-    box-shadow: 0 0 20px var(--hover-coral);
+    background-color: var(--hover-accent-color);
+    box-shadow: 0 0 20px var(--hover-accent-color);
   }
 }
 

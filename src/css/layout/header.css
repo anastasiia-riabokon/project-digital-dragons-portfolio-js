@@ -59,17 +59,17 @@
 
 @media screen and (hover: hover) {
   .menu-list-item:hover {
-    color: var(--coral);
+    color: var(--accent-color);
   }
 }
 
 .menu-list-item:focus {
-  color: var(--coral);
+  color: var(--accent-color);
 }
 
 @media screen and not (hover: hover) {
   .menu-list-item:active {
-    color: var(--coral);
+    color: var(--accent-color);
   }
 }
 
@@ -81,7 +81,7 @@
   align-items: center;
   line-height: normal;
   border-radius: 60px;
-  background-color: var(--coral);
+  background-color: var(--accent-color);
   border: none;
   transition-property: background-color;
 }
@@ -94,17 +94,17 @@
 
 @media screen and (hover: hover) {
   .order-btn:hover {
-    background-color: var(--hover-coral);
+    background-color: var(--hover-accent-color);
   }
 }
 
 .order-btn:focus {
-  background-color: var(--hover-coral);
+  background-color: var(--hover-accent-color);
 }
 
 @media screen and not (hover: hover) {
   .order-btn:active {
-    background-color: var(--hover-coral);
+    background-color: var(--hover-accent-color);
   }
 }
 

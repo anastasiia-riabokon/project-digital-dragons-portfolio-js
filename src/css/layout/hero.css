@@ -1,5 +1,5 @@
 .hero.section {
-  background-image: url('../../img/hero/Hero_red.png');
+  background-image: var(--lowResDesk);
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 300px;
@@ -9,32 +9,32 @@
 }
 @media (min-resolution: 192dpi) {
   .hero.section {
-    background-image: url('../../img/hero/Hero@2x_red.png');
+    background-image: var(--highResDesk);
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .hero.section {
-    background-image: url('../../img/hero/red-tab.png');
+    background-image: var(--lowResTab);
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi) {
   .hero.section {
-    background-image: url('../../img/hero/red-tab@2x.png');
+    background-image: var(--highResTab);
   }
 }
 
 @media only screen and (max-width: 767px) {
   .hero.section {
     padding-top: 281px;
-    background-image: url('../../img/hero/red-mob.png');
+    background-image: var(--lowResMob);
   }
 }
 
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero.section {
-    background-image: url('../../img/hero/red-mob@2x.png');
+    background-image: var(--highResMob);
   }
 }
 
